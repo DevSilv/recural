@@ -3,17 +3,17 @@ const process = require("process");
 const {
 	shallowAreArraysEqual,
 	deepAreArraysEqual
-} = require("./algorithms/are-arrays-equal");
-const { split } = require("./algorithms/split");
-const { slice } = require("./algorithms/slice");
-const { findFirst } = require("./algorithms/find-first");
-const { findAll } = require("./algorithms/find-all");
-const { reduce } = require("./algorithms/reduce");
-const { map } = require("./algorithms/map");
-const { getLength } = require("./algorithms/get-length");
-const { countIf } = require("./algorithms/count-if");
-const { splitIf } = require("./algorithms/split-if");
-const { join } = require("./algorithms/join");
+} = require("./algorithms/arrays/are-arrays-equal");
+const { split } = require("./algorithms/arrays/split");
+const { slice } = require("./algorithms/arrays/slice");
+const { findFirst } = require("./algorithms/arrays/find-first");
+const { findAll } = require("./algorithms/arrays/find-all");
+const { reduce } = require("./algorithms/arrays/reduce");
+const { map } = require("./algorithms/arrays/map");
+const { getLength } = require("./algorithms/arrays/get-length");
+const { countIf } = require("./algorithms/arrays/count-if");
+const { splitIf } = require("./algorithms/arrays/split-if");
+const { join } = require("./algorithms/arrays/join");
 
 // /**
 //  * @callback TestFn
