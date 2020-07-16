@@ -1,18 +1,19 @@
 const process = require("process");
+
 const {
 	shallowAreArraysEqual,
-	deepAreArraysEqual,
-	split,
-	slice,
-	findFirst,
-	findAll,
-	reduce,
-	map,
-	getLength,
-	countIf,
-	splitIf,
-	join
-} = require("./index");
+	deepAreArraysEqual
+} = require("./algorithms/are-array-equal");
+const { split } = require("./algorithms/split");
+const { slice } = require("./algorithms/slice");
+const { findFirst } = require("./algorithms/find-first");
+const { findAll } = require("./algorithms/find-all");
+const { reduce } = require("./algorithms/reduce");
+const { map } = require("./algorithms/map");
+const { getLength } = require("./algorithms/get-length");
+const { countIf } = require("./algorithms/count-if");
+const { splitIf } = require("./algorithms/split-if");
+const { join } = require("./algorithms/join");
 
 // /**
 //  * @callback TestFn
