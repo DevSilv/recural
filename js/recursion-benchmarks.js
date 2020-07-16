@@ -3,7 +3,7 @@ const process = require("process");
 const {
 	shallowAreArraysEqual,
 	deepAreArraysEqual
-} = require("./algorithms/are-array-equal");
+} = require("./algorithms/are-arrays-equal");
 const { split } = require("./algorithms/split");
 const { slice } = require("./algorithms/slice");
 const { findFirst } = require("./algorithms/find-first");
