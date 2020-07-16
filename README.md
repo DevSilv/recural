@@ -1,4 +1,4 @@
-# Recursion algorithms
+# Recursive algorithms
 
 ## License
 
