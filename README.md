@@ -22,9 +22,18 @@ If the pseudocode of an algorithm and any of the implementations of this algorit
 
 ## Links
 
-### JS
+### Links related to technologies in general
+
+#### JavaScript
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+- https://jsdoc.app/tags-callback.html
+
+### Links related to algorithms
+
+Sources under the following links **need not** contain neither identical formulations of algorithms nor identical implementations of them. They are only **example sources** related to particular algorithms.
+
+#### Slice
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-- https://jsdoc.app/tags-callback.html
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
