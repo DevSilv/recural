@@ -26,7 +26,7 @@ const testCases =
 		joinTestCases
 	);
 
-// let areAllTestsPassed = true;
+let areAllTestsPassed = true;
 
 testCases.forEach(
 	testCase => {
@@ -34,7 +34,8 @@ testCases.forEach(
 			= testCase.isTestPassedCallback(
 				testCase.fn.apply(undefined, testCase.fnInput)
 			);
-		// areAllTestsPassed = areAllTestsPassed && result;
+
+		areAllTestsPassed = areAllTestsPassed && result;
 
 		process.stdout.write(
 			`${testCase.fnName}: test ${result ? "PASSED" : "FAILED"}\n`
@@ -42,8 +43,8 @@ testCases.forEach(
 	}
 );
 
-// if (areAllTestsPassed) {
-// 	process.stdout.write("All tests PASSED\n")
-// } else {
-// 	process.stdout.write("Some tests FAILED\n");
-// }
+if (areAllTestsPassed) {
+	process.stdout.write("\nAll tests PASSED\n")
+} else {
+	process.stdout.write("\nSome tests FAILED\n");
+}
