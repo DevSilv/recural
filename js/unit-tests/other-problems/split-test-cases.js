@@ -1,7 +1,7 @@
 const { TestCase } = require("../test-case");
 const { deepAreArraysEqual }
-	= require("../../algorithms/arrays/are-arrays-equal");
-const { split } = require("../../algorithms/arrays/split");
+	= require("../../algorithms/other-problems/are-arrays-equal");
+const { split } = require("../../algorithms/other-problems/split");
 
 exports.testCases = [
 	new TestCase(
