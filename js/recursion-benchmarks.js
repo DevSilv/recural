@@ -15,6 +15,8 @@ const { countIf } = require("./algorithms/other-problems/count-if");
 const { splitIf } = require("./algorithms/other-problems/split-if");
 const { join } = require("./algorithms/other-problems/join");
 const { binarySearch } = require("./algorithms/searching/binary-search");
+const { sentinelFindFirst }
+	= require("./algorithms/searching/sentinel-find-first");
 
 /**
  * @param {number} start
@@ -159,5 +161,11 @@ benchmark(
 benchmark(
 	"binarySearch",
 	() => binarySearch(integerRange, 1500, 0, integerRange.length - 1),
+	100
+).outputResult();
+
+benchmark(
+	"sentinelFindFirst",
+	() => sentinelFindFirst(integerRange.concat([1500]), elem => elem === 1500),
 	100
 ).outputResult();
