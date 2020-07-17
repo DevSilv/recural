@@ -14,6 +14,7 @@ const { getLength } = require("./algorithms/arrays/get-length");
 const { countIf } = require("./algorithms/arrays/count-if");
 const { splitIf } = require("./algorithms/arrays/split-if");
 const { join } = require("./algorithms/arrays/join");
+const { binarySearch } = require("./algorithms/arrays/binary-search");
 
 /**
  * @param {number} start
@@ -152,5 +153,11 @@ benchmark(
 benchmark(
 	"join",
 	() => join(integerRange, integerRange),
+	100
+).outputResult();
+
+benchmark(
+	"binarySearch",
+	() => binarySearch(integerRange, 1500, 0, integerRange.length - 1),
 	100
 ).outputResult();

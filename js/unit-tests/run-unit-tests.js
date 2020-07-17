@@ -11,6 +11,8 @@ const getLengthTestCases = require("./arrays/get-length-test-cases").testCases;
 const countIfTestCases = require("./arrays/count-if-test-cases").testCases;
 const splitIfTestCases = require("./arrays/split-if-test-cases").testCases;
 const joinTestCases = require("./arrays/join-test-cases").testCases;
+const binarySearchTestCases
+	= require("./arrays/binary-search-test-cases").testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -23,7 +25,8 @@ const testCases =
 		getLengthTestCases,
 		countIfTestCases,
 		splitIfTestCases,
-		joinTestCases
+		joinTestCases,
+		binarySearchTestCases
 	);
 
 let areAllTestsPassed = true;
