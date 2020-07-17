@@ -1,5 +1,5 @@
 const { TestCase } = require("../test-case");
-const { countIf } = require("../../algorithms/arrays/count-if");
+const { countIf } = require("../../algorithms/other-problems/count-if");
 
 exports.testCases = [
 	new TestCase(

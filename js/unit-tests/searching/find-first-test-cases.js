@@ -1,5 +1,5 @@
 const { TestCase } = require("../test-case");
-const { findFirst } = require("../../algorithms/arrays/find-first");
+const { findFirst } = require("../../algorithms/searching/find-first");
 
 exports.testCases = [
 	new TestCase(

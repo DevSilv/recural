@@ -2,7 +2,7 @@ const { TestCase } = require("../test-case");
 const {
 	shallowAreArraysEqual,
 	deepAreArraysEqual
-} = require("../../algorithms/arrays/are-arrays-equal");
+} = require("../../algorithms/other-problems/are-arrays-equal");
 
 exports.testCases = [
 	new TestCase(

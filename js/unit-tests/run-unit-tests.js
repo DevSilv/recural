@@ -1,18 +1,22 @@
 const process = require("process");
 const areArraysEqualTestCases
-	= require("./arrays/are-arrays-equal-test-cases").testCases;
-const splitTestCases = require("./arrays/split-test-cases").testCases;
-const sliceTestCases = require("./arrays/slice-test-cases").testCases;
-const findFirstTestCases = require("./arrays/find-first-test-cases").testCases;
-const findAllTestCases = require("./arrays/find-all-test-cases").testCases;
-const reduceTestCases = require("./arrays/reduce-test-cases").testCases;
-const mapTestCases = require("./arrays/map-test-cases").testCases;
-const getLengthTestCases = require("./arrays/get-length-test-cases").testCases;
-const countIfTestCases = require("./arrays/count-if-test-cases").testCases;
-const splitIfTestCases = require("./arrays/split-if-test-cases").testCases;
-const joinTestCases = require("./arrays/join-test-cases").testCases;
+	= require("./other-problems/are-arrays-equal-test-cases").testCases;
+const splitTestCases = require("./other-problems/split-test-cases").testCases;
+const sliceTestCases = require("./other-problems/slice-test-cases").testCases;
+const findFirstTestCases
+	= require("./searching/find-first-test-cases").testCases;
+const findAllTestCases = require("./searching/find-all-test-cases").testCases;
+const reduceTestCases = require("./other-problems/reduce-test-cases").testCases;
+const mapTestCases = require("./other-problems/map-test-cases").testCases;
+const getLengthTestCases
+	= require("./other-problems/get-length-test-cases").testCases;
+const countIfTestCases
+	= require("./other-problems/count-if-test-cases").testCases;
+const splitIfTestCases
+	= require("./other-problems/split-if-test-cases").testCases;
+const joinTestCases = require("./other-problems/join-test-cases").testCases;
 const binarySearchTestCases
-	= require("./arrays/binary-search-test-cases").testCases;
+	= require("./searching/binary-search-test-cases").testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(

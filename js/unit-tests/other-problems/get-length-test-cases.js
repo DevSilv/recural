@@ -1,5 +1,5 @@
 const { TestCase } = require("../test-case");
-const { getLength } = require("../../algorithms/arrays/get-length");
+const { getLength } = require("../../algorithms/other-problems/get-length");
 
 exports.testCases = [
 	new TestCase(

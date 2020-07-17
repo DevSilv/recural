@@ -1,5 +1,5 @@
 const { TestCase } = require("../test-case");
-const { binarySearch } = require("../../algorithms/arrays/binary-search");
+const { binarySearch } = require("../../algorithms/searching/binary-search");
 
 /**
  * @todo Add test cases for duplicate elements as soon as it will be clear

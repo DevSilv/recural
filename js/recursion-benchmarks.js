@@ -3,18 +3,18 @@ const process = require("process");
 const {
 	shallowAreArraysEqual,
 	deepAreArraysEqual
-} = require("./algorithms/arrays/are-arrays-equal");
-const { split } = require("./algorithms/arrays/split");
-const { slice } = require("./algorithms/arrays/slice");
-const { findFirst } = require("./algorithms/arrays/find-first");
-const { findAll } = require("./algorithms/arrays/find-all");
-const { reduce } = require("./algorithms/arrays/reduce");
-const { map } = require("./algorithms/arrays/map");
-const { getLength } = require("./algorithms/arrays/get-length");
-const { countIf } = require("./algorithms/arrays/count-if");
-const { splitIf } = require("./algorithms/arrays/split-if");
-const { join } = require("./algorithms/arrays/join");
-const { binarySearch } = require("./algorithms/arrays/binary-search");
+} = require("./algorithms/other-problems/are-arrays-equal");
+const { split } = require("./algorithms/other-problems/split");
+const { slice } = require("./algorithms/other-problems/slice");
+const { findFirst } = require("./algorithms/searching/find-first");
+const { findAll } = require("./algorithms/searching/find-all");
+const { reduce } = require("./algorithms/other-problems/reduce");
+const { map } = require("./algorithms/other-problems/map");
+const { getLength } = require("./algorithms/other-problems/get-length");
+const { countIf } = require("./algorithms/other-problems/count-if");
+const { splitIf } = require("./algorithms/other-problems/split-if");
+const { join } = require("./algorithms/other-problems/join");
+const { binarySearch } = require("./algorithms/searching/binary-search");
 
 /**
  * @param {number} start
