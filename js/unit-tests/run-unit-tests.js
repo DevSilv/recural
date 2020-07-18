@@ -19,6 +19,8 @@ const binarySearchTestCases
 	= require("./searching/binary-search-test-cases").testCases;
 const sentinelFindFirstTestCases
 	= require("./searching/sentinel-find-first-test-cases").testCases;
+const getFactorialTestCases
+	= require("./other-problems/get-factorial-test-cases").testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -33,7 +35,8 @@ const testCases =
 		splitIfTestCases,
 		joinTestCases,
 		binarySearchTestCases,
-		sentinelFindFirstTestCases
+		sentinelFindFirstTestCases,
+		getFactorialTestCases,
 	);
 
 let areAllTestsPassed = true;

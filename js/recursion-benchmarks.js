@@ -17,6 +17,7 @@ const { join } = require("./algorithms/other-problems/join");
 const { binarySearch } = require("./algorithms/searching/binary-search");
 const { sentinelFindFirst }
 	= require("./algorithms/searching/sentinel-find-first");
+const { getFactorial } = require("./algorithms/other-problems/get-factorial");
 
 /**
  * @param {number} start
@@ -167,5 +168,11 @@ benchmark(
 benchmark(
 	"sentinelFindFirst",
 	() => sentinelFindFirst(integerRange.concat([1500]), elem => elem === 1500),
+	100
+).outputResult();
+
+benchmark(
+	"getFactorial",
+	() => getFactorial(integerRange[Math.floor(integerRange.length / 2)]),
 	100
 ).outputResult();
