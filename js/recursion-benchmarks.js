@@ -18,6 +18,8 @@ const { binarySearch } = require("./algorithms/searching/binary-search");
 const { sentinelFindFirst }
 	= require("./algorithms/searching/sentinel-find-first");
 const { getFactorial } = require("./algorithms/other-problems/get-factorial");
+const { getNthFibonacciNum }
+	= require("./algorithms/other-problems/get-nth-fibonacci-num");
 
 /**
  * @param {number} start
@@ -174,5 +176,11 @@ benchmark(
 benchmark(
 	"getFactorial",
 	() => getFactorial(integerRange[Math.floor(integerRange.length / 2)]),
+	100
+).outputResult();
+
+benchmark(
+	"getNthFibonacciNum",
+	() => getNthFibonacciNum(32),
 	100
 ).outputResult();
