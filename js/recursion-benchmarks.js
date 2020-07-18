@@ -20,6 +20,7 @@ const { sentinelFindFirst }
 const { getFactorial } = require("./algorithms/other-problems/get-factorial");
 const { getNthFibonacciNum }
 	= require("./algorithms/other-problems/get-nth-fibonacci-num");
+const { multiply } = require("./algorithms/other-problems/multiply");
 
 /**
  * @param {number} start
@@ -182,5 +183,14 @@ benchmark(
 benchmark(
 	"getNthFibonacciNum",
 	() => getNthFibonacciNum(32),
+	100
+).outputResult();
+
+benchmark(
+	"multiply",
+	() => multiply(
+		integerRange[integerRange.length - 1],
+		integerRange[integerRange.length - 1]
+	),
 	100
 ).outputResult();

@@ -23,6 +23,8 @@ const getFactorialTestCases
 	= require("./other-problems/get-factorial-test-cases").testCases;
 const getNthFibonacciNumTestCases
 	= require("./other-problems/get-nth-fibonacci-num-test-cases").testCases;
+const multiplyTestCases
+	= require("./other-problems/multiply-test-cases").testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -39,7 +41,8 @@ const testCases =
 		binarySearchTestCases,
 		sentinelFindFirstTestCases,
 		getFactorialTestCases,
-		getNthFibonacciNumTestCases
+		getNthFibonacciNumTestCases,
+		multiplyTestCases
 	);
 
 let areAllTestsPassed = true;
