@@ -4,9 +4,11 @@ const areArraysEqualTestCases
 		"../../algorithms/other-problems/are-arrays-equal/js/"
 		+ "are-arrays-equal-test-cases"
 	).testCases;
-const splitTestCases
-	= require("../../algorithms/other-problems/split/js/split-test-cases")
-		.testCases;
+const splitIntoPartsTestCases
+	= require(
+		"../../algorithms/other-problems/split-into-parts/js/"
+		+ "split-into-parts-test-cases"
+	).testCases;
 const sliceTestCases
 	= require("../../algorithms/other-problems/slice/js/slice-test-cases")
 		.testCases;
@@ -60,7 +62,7 @@ const multiplyTestCases
 
 const testCases =
 	areArraysEqualTestCases.concat(
-		splitTestCases,
+		splitIntoPartsTestCases,
 		sliceTestCases,
 		findFirstTestCases,
 		findAllTestCases,

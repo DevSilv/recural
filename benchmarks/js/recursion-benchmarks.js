@@ -6,7 +6,10 @@ const {
 } = require(
 	"../../algorithms/other-problems/are-arrays-equal/js/are-arrays-equal"
 );
-const { split } = require("../../algorithms/other-problems/split/js/split");
+const { splitIntoParts }
+	= require(
+		"../../algorithms/other-problems/split-into-parts/js/split-into-parts"
+	);
 const { slice } = require("../../algorithms/other-problems/slice/js/slice");
 const { findFirst }
 	= require("../../algorithms/searching/find-first/js/find-first");
@@ -117,8 +120,8 @@ benchmark(
 ).outputResult();
 
 benchmark(
-	"split",
-	() => split(integerRange, 100, []),
+	"splitIntoParts",
+	() => splitIntoParts(integerRange, 100, []),
 	100
 ).outputResult();
 
