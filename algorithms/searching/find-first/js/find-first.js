@@ -1,16 +1,4 @@
 /**
- * 	FIND_FIRST (arr, pred)
- * 		if empty(arr)
- * 		then return nil
- * 		else
- * 			if pred(arr[0])
- * 			then return arr[0]
- * 			else return FIND_FIRST(slice(arr, 1, len(arr)), pred)
- * 
- * 	FIND_FIRST([1, 2, 3], elem -> equal(remainder(elem, 2), 0))
- */
-
-/**
  * @callback FindFirstPredicate
  * @param {any} elem
  * @returns {boolean}
