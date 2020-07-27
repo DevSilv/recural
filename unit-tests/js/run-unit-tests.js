@@ -59,6 +59,11 @@ const getNthFibonacciNumTestCases
 const multiplyTestCases
 	= require("../../algorithms/other-problems/multiply/js/multiply-test-cases")
 		.testCases;
+const generateRandomPermutationTestCases
+	= require(
+		"../../algorithms/other-problems/generate-random-permutation/js/"
+		+ "generate-random-permutation-test-cases"
+	).testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -76,7 +81,8 @@ const testCases =
 		sentinelFindFirstTestCases,
 		getFactorialTestCases,
 		getNthFibonacciNumTestCases,
-		multiplyTestCases
+		multiplyTestCases,
+		generateRandomPermutationTestCases
 	);
 
 let areAllTestsPassed = true;

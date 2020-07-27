@@ -38,6 +38,11 @@ const { getNthFibonacciNum }
 	);
 const { multiply }
 	= require("../../algorithms/other-problems/multiply/js/multiply");
+const { generateRandomPermutation }
+	= require(
+		"../../algorithms/other-problems/generate-random-permutation/js/"
+		+ "generate-random-permutation"
+	);
 
 /**
  * @param {number} start
@@ -209,5 +214,11 @@ benchmark(
 		integerRange[integerRange.length - 1],
 		integerRange[integerRange.length - 1]
 	),
+	100
+).outputResult();
+
+benchmark(
+	"generateRandomPermutation",
+	() => generateRandomPermutation(integerRange, []),
 	100
 ).outputResult();
