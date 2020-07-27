@@ -48,6 +48,10 @@ const { breadthFirstSearch }
 		"../../algorithms/searching/breadth-first-search/js/"
 		+ "breadth-first-search"
 	);
+const { depthFirstSearch }
+	= require(
+		"../../algorithms/searching/depth-first-search/js/depth-first-search"
+	);
 
 /**
  * @param {number} start
@@ -244,6 +248,18 @@ const complexMockGraphWithCycles
 benchmark(
 	"breadthFirstSearch",
 	() => breadthFirstSearch(
+		vt => vt === 2,
+		vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+		0,
+		[],
+		[]
+	),
+	100
+).outputResult();
+
+benchmark(
+	"depthFirstSearch",
+	() => depthFirstSearch(
 		vt => vt === 2,
 		vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
 		0,

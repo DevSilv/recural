@@ -69,6 +69,11 @@ const breadthFirstSearchTestCases
 		"../../algorithms/searching/breadth-first-search/js/"
 		+ "breadth-first-search-test-cases"
 	).testCases;
+const depthFirstSearchTestCases
+	= require(
+		"../../algorithms/searching/depth-first-search/js/"
+		+ "depth-first-search-test-cases"
+	).testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -88,7 +93,8 @@ const testCases =
 		getNthFibonacciNumTestCases,
 		multiplyTestCases,
 		generateRandomPermutationTestCases,
-		breadthFirstSearchTestCases
+		breadthFirstSearchTestCases,
+		depthFirstSearchTestCases
 	);
 
 let areAllTestsPassed = true;
