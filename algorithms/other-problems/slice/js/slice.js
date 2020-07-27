@@ -1,16 +1,4 @@
 /**
- * 	SLICE (arr, start, end, res, cur)
- * 		if equal(cur, end)
- * 		then return res
- * 		else
- * 			if greaterOrEqual(cur, start) and less(cur, end)
- * 			then return SLICE(arr, start, end, concat(res, arr[cur]), cur + 1)
- * 			else return SLICE(arr, start, end, res, cur + 1)
- *
- * 	SLICE([1, 2, 3], 1, 3, [], 0)
- */
-
-/**
  * @template T
  * @param {T[]} arr
  * @param {number} start

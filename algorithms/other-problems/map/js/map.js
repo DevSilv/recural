@@ -1,13 +1,4 @@
 /**
- * 	MAP (arr, fn, res)
- * 		if empty(arr)
- * 		then return res
- * 		else return MAP(slice(arr, 1, len(arr)), fn, concat(res, fn(arr[0])))
- * 
- * 	MAP([1, 2, 3], elem -> multiply(elem, 2))
- */
-
-/**
  * @callback MapFn
  * @param {any} elem
  * @returns {any}
