@@ -64,6 +64,11 @@ const generateRandomPermutationTestCases
 		"../../algorithms/other-problems/generate-random-permutation/js/"
 		+ "generate-random-permutation-test-cases"
 	).testCases;
+const breadthFirstSearchTestCases
+	= require(
+		"../../algorithms/searching/breadth-first-search/js/"
+		+ "breadth-first-search-test-cases"
+	).testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -82,7 +87,8 @@ const testCases =
 		getFactorialTestCases,
 		getNthFibonacciNumTestCases,
 		multiplyTestCases,
-		generateRandomPermutationTestCases
+		generateRandomPermutationTestCases,
+		breadthFirstSearchTestCases
 	);
 
 let areAllTestsPassed = true;

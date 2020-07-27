@@ -43,6 +43,11 @@ const { generateRandomPermutation }
 		"../../algorithms/other-problems/generate-random-permutation/js/"
 		+ "generate-random-permutation"
 	);
+const { breadthFirstSearch }
+	= require(
+		"../../algorithms/searching/breadth-first-search/js/"
+		+ "breadth-first-search"
+	);
 
 /**
  * @param {number} start
@@ -220,5 +225,30 @@ benchmark(
 benchmark(
 	"generateRandomPermutation",
 	() => generateRandomPermutation(integerRange, []),
+	100
+).outputResult();
+
+const complexMockGraphWithCycles
+	= new Map(
+		[
+			[0, [0, 1, 2, 3, 4, 5, 6]],
+			[1, [0, 1, 2, 3, 4, 5, 6]],
+			[2, [0, 2, 3, 4, 5, 6]],
+			[3, [0, 3, 4, 5, 6]],
+			[4, [0, 4, 5, 6]],
+			[5, [0, 5, 6]],
+			[6, [0, 6]]
+		]
+	);
+
+benchmark(
+	"breadthFirstSearch",
+	() => breadthFirstSearch(
+		vt => vt === 2,
+		vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+		0,
+		[],
+		[]
+	),
 	100
 ).outputResult();
