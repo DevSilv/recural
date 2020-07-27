@@ -20,20 +20,8 @@ The code may contain bugs.
 
 If the pseudocode of an algorithm and any of the implementations of this algorithm differ in any way, neither of them has preference in terms of correctness.
 
-## Links
+## Authoritativeness of the pseudocode of an algorithm to its implementations (or vice versa)
 
-### Links related to technologies in general
+For an algorithm, its pseudocode **must not** be treated as authoritative to any implementation of the  algorithm, and vice versa: any implementation **must not** be treated as authoritative neither to any other one, nor to the pseudocode.
 
-#### JavaScript
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
-- https://jsdoc.app/tags-callback.html
-
-### Links related to algorithms
-
-Sources under the following links **need not** contain neither identical formulations of algorithms nor identical implementations of them. They are only **example sources** related to particular algorithms.
-
-#### Slice
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+The reason is, each implementation is expected to be different from every other implementations, and from the pseudocode. As an example: for an algorithm, it may happen that none of its implementations relates one to one to the pseudocode.
