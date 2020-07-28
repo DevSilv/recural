@@ -1,4 +1,4 @@
-const process = require("process");
+const processModule = require("process");
 
 const {
 	shallowAreArraysEqual,
@@ -108,9 +108,9 @@ const benchmark
 	= (benchmarkedFnName, fn, repeatCount) => {
 		const getExecTime
 			= () => {
-				const start = process.hrtime();
+				const start = processModule.hrtime();
 				fn();
-				const end = process.hrtime(start);
+				const end = processModule.hrtime(start);
 
 				return end;
 			};
@@ -120,9 +120,9 @@ const benchmark
 		return {
 			outputResult:
 				() => {
-					process.stdout.write(`${benchmarkedFnName}\n`);
-					process.stdout.write(`${meanExecTime[0]}s\n`);
-					process.stdout.write(`${meanExecTime[1] / 1000000}ms\n\n`);
+					processModule.stdout.write(`${benchmarkedFnName}\n`);
+					processModule.stdout.write(`${meanExecTime[0]}s\n`);
+					processModule.stdout.write(`${meanExecTime[1] / 1000000}ms\n\n`);
 				}
 		};
 	};
