@@ -74,6 +74,8 @@ const depthFirstSearchTestCases
 		"../../algorithms/searching/depth-first-search/js/"
 		+ "depth-first-search-test-cases"
 	).testCases;
+const { testCases: isSortedAscTestCases }
+	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc-test-cases");
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -94,7 +96,8 @@ const testCases =
 		multiplyTestCases,
 		generateRandomPermutationTestCases,
 		breadthFirstSearchTestCases,
-		depthFirstSearchTestCases
+		depthFirstSearchTestCases,
+		isSortedAscTestCases
 	);
 
 let areAllTestsPassed = true;

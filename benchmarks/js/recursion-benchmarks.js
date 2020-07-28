@@ -52,6 +52,8 @@ const { depthFirstSearch }
 	= require(
 		"../../algorithms/searching/depth-first-search/js/depth-first-search"
 	);
+const { isSortedAsc }
+	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc");
 
 /**
  * @param {number} start
@@ -266,5 +268,16 @@ benchmark(
 		[],
 		[]
 	),
+	100
+).outputResult();
+
+benchmark(
+	"isSortedAsc",
+	() =>
+		isSortedAsc(
+			(firstElem, secondElem) => firstElem > secondElem,
+			integerRange,
+			0
+		),
 	100
 ).outputResult();
