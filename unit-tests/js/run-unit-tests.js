@@ -83,6 +83,8 @@ const { testCases: computeGreatestCommonDivisorTestCases }
 	= require(
 		"../../algorithms/other-problems/compute-greatest-common-divisor/js/compute-greatest-common-divisor-test-cases"
 	);
+const { testCases: reverseTestCases }
+	= require("../../algorithms/other-problems/reverse/js/reverse-test-cases");
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -106,7 +108,8 @@ const testCases =
 		depthFirstSearchTestCases,
 		isSortedAscTestCases,
 		quicksortTestCases,
-		computeGreatestCommonDivisorTestCases
+		computeGreatestCommonDivisorTestCases,
+		reverseTestCases
 	);
 
 let areAllTestsPassed = true;

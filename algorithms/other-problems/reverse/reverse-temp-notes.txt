@@ -1,0 +1,45 @@
+[0, 1, 2, 3, 4] move arr[0] before arr[len(arr) - 0]
+
+[1, 2, 3, 4, 0] move arr[0] before arr[len(arr) - 1]
+
+[2, 3, 4, 1, 0] move arr[0] before arr[len(arr) - 2]
+
+[3, 4, 2, 1, 0] move arr[0] before arr[len(arr) - 3]
+
+[4, 3, 2, 1, 0] end.
+
+So, it seems that for n elements need to do n-1 shifts (?)
+
+Not feasible, because there is no position len(arr) - 0.
+
+What else?
+
+Maybe:
+
+[0, 1, 2, 3, 4] move arr[1] before arr[0]; n is 1, rest of array is concat(slice(arr, 0, 0), slice(arr, 2, 4))
+[1, 0, 2, 3, 4] move arr[2] before arr[0]; n is 2, rest of array is concat(slice(arr, 0, 1), slice(arr, 3, 4))
+[2, 1, 0, 3, 4] move arr[3] before arr[0]; n is 3, rest of array is concat(slice(arr, 0, 2), slice(arr, 4, 4))
+[3, 2, 1, 0, 4] move arr[4] before arr[0]; n is 4, rest of array is concat(slice(arr, 0, 3), slice(arr, 5, 4))
+[4, 3, 2, 1, 0] end.
+
+Then, arr[1], arr[2], arr[3], arr[4] are arr[n], for n ranging from 1 (incl) to len(arr) - 1 (incl)
+
+No, also not possible. No position len(arr) (5 in the above example).
+
+Or:
+
+[0, 1, 2, 3, 4] move arr[1] before arr[0]; n is 1, rest of array is concat(slice(arr, 0, 0), slice(arr, 2, 4))
+[1, 0, 2, 3, 4] move arr[2] before arr[0]; n is 2, rest of array is concat(slice(arr, 0, 1), slice(arr, 3, 4))
+[2, 1, 0, 3, 4] move arr[3] before arr[0]; n is 3, rest of array is concat(slice(arr, 0, 2), slice(arr, 4, 4))
+[3, 2, 1, 0, 4] return arr with moved arr[4] to the beginning (end).
+
+n ranging from 0 + 1 to (len(arr) - 3) + 1.
+
+And for no n, but res?
+
+arr is [0, 1, 2, 3, 4]
+move arr[0] to the beginning of res, remove arr[0] from arr -> res is [0], arr is [1, 2, 3, 4]
+move arr[0] to the beginning of res, remove arr[0] from arr -> res is [1, 0], arr is [2, 3, 4]
+move arr[0] to the beginning of res, remove arr[0] from arr -> res is [2, 1, 0], arr is [3, 4]
+move arr[0] to the beginning of res, remove arr[0] from arr -> res is [3, 2, 1, 0], arr is [4]
+move arr[0] to the beginning of res, remove arr[0] from arr -> res is [4, 3, 2, 1, 0], arr is []

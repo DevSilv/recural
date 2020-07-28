@@ -61,6 +61,8 @@ const { computeGreatestCommonDivisorEuclideanAlgorithm }
 	= require(
 		"../../algorithms/other-problems/compute-greatest-common-divisor/js/compute-greatest-common-divisor"
 	);
+const { reverse }
+	= require("../../algorithms/other-problems/reverse/js/reverse");
 
 /**
  * @callback GetMeanExecTimeFn
@@ -293,5 +295,11 @@ benchmark(
 			integerRange[integerRange.length - 1],
 			0
 		),
+	100
+).outputResult();
+
+benchmark(
+	"reverse",
+	() => reverse(integerRange, 0),
 	100
 ).outputResult();
