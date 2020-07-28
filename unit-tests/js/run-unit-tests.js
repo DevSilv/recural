@@ -79,6 +79,10 @@ const { testCases: isSortedAscTestCases }
 const quicksortTestCases
 	= require("../../algorithms/sorting/quicksort/js/quicksort-test-cases")
 		.testCases;
+const { testCases: computeGreatestCommonDivisorTestCases }
+	= require(
+		"../../algorithms/other-problems/compute-greatest-common-divisor/js/compute-greatest-common-divisor-test-cases"
+	);
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -101,7 +105,8 @@ const testCases =
 		breadthFirstSearchTestCases,
 		depthFirstSearchTestCases,
 		isSortedAscTestCases,
-		quicksortTestCases
+		quicksortTestCases,
+		computeGreatestCommonDivisorTestCases
 	);
 
 let areAllTestsPassed = true;

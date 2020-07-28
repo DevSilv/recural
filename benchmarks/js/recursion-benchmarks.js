@@ -56,6 +56,10 @@ const { isSortedAsc }
 	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc");
 const { quicksort }
 	= require("../../algorithms/sorting/quicksort/js/quicksort");
+const { computeGreatestCommonDivisorEuclideanAlgorithm }
+	= require(
+		"../../algorithms/other-problems/compute-greatest-common-divisor/js/compute-greatest-common-divisor"
+	);
 
 /**
  * @param {number} start
@@ -291,5 +295,16 @@ benchmark(
 		0,
 		integerRange.length - 1
 	),
+	100
+).outputResult();
+
+benchmark(
+	"computeGreatestCommonDivisorEuclideanAlgorithm",
+	() =>
+		computeGreatestCommonDivisorEuclideanAlgorithm(
+			integerRange[0],
+			integerRange[integerRange.length - 1],
+			0
+		),
 	100
 ).outputResult();
