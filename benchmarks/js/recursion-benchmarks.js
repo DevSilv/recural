@@ -62,20 +62,6 @@ const { computeGreatestCommonDivisorEuclideanAlgorithm }
 		"../../algorithms/other-problems/compute-greatest-common-divisor/js/compute-greatest-common-divisor"
 	);
 
-// /**
-//  * @param {number} start
-//  * @param {number} end
-//  * @returns {number[]}
-//  */
-// const getIntegerRange
-// 	= (start, end) =>
-// 		Array
-// 			.from(
-// 				new Array(end + 1)
-// 					.keys()
-// 			)
-// 			.filter(elem => elem >= start);
-
 /**
  * @callback GetMeanExecTimeFn
  * @returns {number[]}
