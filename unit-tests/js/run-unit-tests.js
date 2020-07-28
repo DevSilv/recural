@@ -76,6 +76,9 @@ const depthFirstSearchTestCases
 	).testCases;
 const { testCases: isSortedAscTestCases }
 	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc-test-cases");
+const quicksortTestCases
+	= require("../../algorithms/sorting/quicksort/js/quicksort-test-cases")
+		.testCases;
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -97,7 +100,8 @@ const testCases =
 		generateRandomPermutationTestCases,
 		breadthFirstSearchTestCases,
 		depthFirstSearchTestCases,
-		isSortedAscTestCases
+		isSortedAscTestCases,
+		quicksortTestCases
 	);
 
 let areAllTestsPassed = true;

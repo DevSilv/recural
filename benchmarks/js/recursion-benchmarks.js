@@ -54,6 +54,8 @@ const { depthFirstSearch }
 	);
 const { isSortedAsc }
 	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc");
+const { quicksort }
+	= require("../../algorithms/sorting/quicksort/js/quicksort");
 
 /**
  * @param {number} start
@@ -279,5 +281,15 @@ benchmark(
 			integerRange,
 			0
 		),
+	100
+).outputResult();
+
+benchmark(
+	"quicksort",
+	() => quicksort(
+		generateRandomPermutation(integerRange, []),
+		0,
+		integerRange.length - 1
+	),
 	100
 ).outputResult();
