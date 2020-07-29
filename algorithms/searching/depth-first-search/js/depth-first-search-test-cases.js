@@ -39,61 +39,77 @@ const initialVt = 0;
 exports.testCases = [
 	new TestCase(
 		"depthFirstSearch",
-		depthFirstSearch,
+		() =>
+			depthFirstSearch(
+				vt => vt === 0,
+				vt =>
+					simpleMockGraphWithoutCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		[
-			vt => vt === 0,
-			vt => simpleMockGraphWithoutCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
+
 		],
 		res => res === 0
 	),
 	new TestCase(
 		"depthFirstSearch",
-		depthFirstSearch,
+		() =>
+			depthFirstSearch(
+				vt => vt === 1,
+				vt => simpleMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		[
-			vt => vt === 1,
-			vt => simpleMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
+
 		],
 		res => res === 1
 	),
 	new TestCase(
 		"depthFirstSearch",
-		depthFirstSearch,
+		() =>
+			depthFirstSearch(
+				vt => vt === 2,
+				vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		[
-			vt => vt === 2,
-			vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
+
 		],
 		res => res === 2
 	),
 	new TestCase(
 		"depthFirstSearch",
-		depthFirstSearch,
+		() =>
+			depthFirstSearch(
+				vt => vt === 6,
+				vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		[
-			vt => vt === 6,
-			vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
+
 		],
 		res => res === 6
 	),
 	new TestCase(
 		"depthFirstSearch",
-		depthFirstSearch,
+		() =>
+			depthFirstSearch(
+				vt => vt === 7,
+				vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		[
-			vt => vt === 7,
-			vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
+
 		],
 		res => res === undefined
 	)

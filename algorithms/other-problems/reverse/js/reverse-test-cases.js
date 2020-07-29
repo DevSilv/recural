@@ -14,28 +14,25 @@ const mockArrs = [
 exports.testCases = [
 	new TestCase(
 		"reverse",
-		reverse,
+		() => reverse([], 0),
 		[
-			[],
-			0
+
 		],
 		res => areArraysEqualModule.deepAreArraysEqual(res, [])
 	),
 	new TestCase(
 		"reverse",
-		reverse,
+		() => reverse([0, 1, 2, 3, 4], 0),
 		[
-			[0, 1, 2, 3, 4],
-			0
+
 		],
 		res => areArraysEqualModule.deepAreArraysEqual(res, [4, 3, 2, 1, 0])
 	),
 	new TestCase(
 		"reverse",
-		reverse,
+		() => reverse(mockArrs[0], 0),
 		[
-			mockArrs[0],
-			0
+
 		],
 		res =>
 			areArraysEqualModule.deepAreArraysEqual(
@@ -45,28 +42,25 @@ exports.testCases = [
 	),
 	new TestCase(
 		"reverse2",
-		reverse2,
+		() => reverse2([], []),
 		[
-			[],
-			[]
+
 		],
 		res => areArraysEqualModule.deepAreArraysEqual(res, [])
 	),
 	new TestCase(
 		"reverse2",
-		reverse2,
+		() => reverse2([0, 1, 2, 3, 4], []),
 		[
-			[0, 1, 2, 3, 4],
-			[]
+
 		],
 		res => areArraysEqualModule.deepAreArraysEqual(res, [4, 3, 2, 1, 0])
 	),
 	new TestCase(
 		"reverse2",
-		reverse2,
+		() => reverse2(mockArrs[0], []),
 		[
-			mockArrs[0],
-			[]
+
 		],
 		res =>
 			areArraysEqualModule.deepAreArraysEqual(

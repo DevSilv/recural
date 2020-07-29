@@ -25,11 +25,14 @@ const mockArrs = [
 exports.testCases = [
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[0],
+				0,
+				mockArrs[0].length - 1
+			),
 		[
-			mockArrs[0],
-			0,
-			mockArrs[0].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -40,11 +43,14 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[1],
+				0,
+				mockArrs[1].length - 1
+			),
 		[
-			mockArrs[1],
-			0,
-			mockArrs[1].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -55,11 +61,14 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[2],
+				0,
+				mockArrs[2].length - 1
+			),
 		[
-			mockArrs[2],
-			0,
-			mockArrs[2].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -70,11 +79,14 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[3],
+				0,
+				mockArrs[3].length - 1
+			),
 		[
-			mockArrs[3],
-			0,
-			mockArrs[3].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -85,11 +97,14 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[4],
+				0,
+				mockArrs[4].length - 1
+			),
 		[
-			mockArrs[4],
-			0,
-			mockArrs[4].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -100,11 +115,14 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[5],
+				0,
+				mockArrs[5].length - 1
+			),
 		[
-			mockArrs[5],
-			0,
-			mockArrs[5].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -115,11 +133,14 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort",
-		quicksort,
+		() =>
+			quicksort(
+				mockArrs[6],
+				0,
+				mockArrs[6].length - 1
+			),
 		[
-			mockArrs[6],
-			0,
-			mockArrs[6].length - 1
+
 		],
 		res =>
 			isSortedAsc(
@@ -130,15 +151,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[0],
+				0,
+				mockArrs[0].length - 1,
+				0,
+				Math.floor(mockArrs[0].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[0],
-			0,
-			mockArrs[0].length - 1,
-			0,
-			Math.floor(mockArrs[0].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(
@@ -149,15 +173,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[1],
+				0,
+				mockArrs[1].length - 1,
+				0,
+				Math.floor(mockArrs[1].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[1],
-			0,
-			mockArrs[1].length - 1,
-			0,
-			Math.floor(mockArrs[1].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(
@@ -168,15 +195,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[2],
+				0,
+				mockArrs[2].length - 1,
+				0,
+				Math.floor(mockArrs[2].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[2],
-			0,
-			mockArrs[2].length - 1,
-			0,
-			Math.floor(mockArrs[2].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(
@@ -187,15 +217,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[3],
+				0,
+				mockArrs[3].length - 1,
+				0,
+				Math.floor(mockArrs[3].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[3],
-			0,
-			mockArrs[3].length - 1,
-			0,
-			Math.floor(mockArrs[3].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(
@@ -206,15 +239,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[4],
+				0,
+				mockArrs[4].length - 1,
+				0,
+				Math.floor(mockArrs[4].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[4],
-			0,
-			mockArrs[4].length - 1,
-			0,
-			Math.floor(mockArrs[4].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(
@@ -225,15 +261,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[5],
+				0,
+				mockArrs[5].length - 1,
+				0,
+				Math.floor(mockArrs[5].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[5],
-			0,
-			mockArrs[5].length - 1,
-			0,
-			Math.floor(mockArrs[5].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(
@@ -244,15 +283,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"quicksort2",
-		quicksort2,
+		() =>
+			quicksort2(
+				mockArrs[6],
+				0,
+				mockArrs[6].length - 1,
+				0,
+				Math.floor(mockArrs[6].length / 2),
+				[],
+				[]
+			),
 		[
-			mockArrs[6],
-			0,
-			mockArrs[6].length - 1,
-			0,
-			Math.floor(mockArrs[6].length / 2),
-			[],
-			[]
+
 		],
 		res =>
 			isSortedAsc(

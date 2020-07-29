@@ -35,12 +35,15 @@ const mockArr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 exports.testCases = [
 	new TestCase(
 		"toh",
-		toh,
+		() =>
+			toh(
+				mockGlobalState1[0].disksArr.length,
+				mockGlobalState1[0],
+				mockGlobalState1[1],
+				mockGlobalState1[2]
+			),
 		[
-			mockGlobalState1[0].disksArr.length,
-			mockGlobalState1[0],
-			mockGlobalState1[1],
-			mockGlobalState1[2]
+
 		],
 		() =>
 			areArraysEqualModule.deepAreArraysEqual(
@@ -56,12 +59,15 @@ exports.testCases = [
 	),
 	new TestCase(
 		"toh",
-		toh,
+		() =>
+			toh(
+				mockGlobalState2[0].disksArr.length,
+				mockGlobalState2[0],
+				mockGlobalState2[1],
+				mockGlobalState2[2]
+			),
 		[
-			mockGlobalState2[0].disksArr.length,
-			mockGlobalState2[0],
-			mockGlobalState2[1],
-			mockGlobalState2[2]
+
 		],
 		() =>
 			areArraysEqualModule.deepAreArraysEqual(
@@ -77,12 +83,15 @@ exports.testCases = [
 	),
 	new TestCase(
 		"toh",
-		toh,
+		() =>
+			toh(
+				mockGlobalState3[0].disksArr.length,
+				mockGlobalState3[0],
+				mockGlobalState3[1],
+				mockGlobalState3[2]
+			),
 		[
-			mockGlobalState3[0].disksArr.length,
-			mockGlobalState3[0],
-			mockGlobalState3[1],
-			mockGlobalState3[2]
+
 		],
 		() =>
 			areArraysEqualModule.deepAreArraysEqual(
@@ -98,15 +107,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"toh2",
-		toh2,
+		() =>
+			toh2(
+				new State(
+					mockArr1.length,
+					0,
+					new Peg("stk", mockArr1),
+					new Peg("tmp", []),
+					new Peg("res", [])
+				)
+			),
 		[
-			new State(
-				mockArr1.length,
-				0,
-				new Peg("stk", mockArr1),
-				new Peg("tmp", []),
-				new Peg("res", [])
-			)
+
 		],
 		result =>
 			areArraysEqualModule.deepAreArraysEqual(
@@ -122,15 +134,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"toh2",
-		toh2,
+		() =>
+			toh2(
+				new State(
+					mockArr2.length,
+					0,
+					new Peg("stk", mockArr2),
+					new Peg("tmp", []),
+					new Peg("res", [])
+				)
+			),
 		[
-			new State(
-				mockArr2.length,
-				0,
-				new Peg("stk", mockArr2),
-				new Peg("tmp", []),
-				new Peg("res", [])
-			)
+
 		],
 		result =>
 			areArraysEqualModule.deepAreArraysEqual(
@@ -146,15 +161,18 @@ exports.testCases = [
 	),
 	new TestCase(
 		"toh2",
-		toh2,
+		() =>
+			toh2(
+				new State(
+					mockArr3.length,
+					0,
+					new Peg("stk", mockArr3),
+					new Peg("tmp", []),
+					new Peg("res", [])
+				)
+			),
 		[
-			new State(
-				mockArr3.length,
-				0,
-				new Peg("stk", mockArr3),
-				new Peg("tmp", []),
-				new Peg("res", [])
-			)
+
 		],
 		result =>
 			areArraysEqualModule.deepAreArraysEqual(
