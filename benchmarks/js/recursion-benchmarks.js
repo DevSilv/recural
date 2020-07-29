@@ -63,6 +63,10 @@ const { computeGreatestCommonDivisorEuclideanAlgorithm }
 	);
 const { reverse }
 	= require("../../algorithms/other-problems/reverse/js/reverse");
+const { trialDivision2 }
+	= require(
+		"../../algorithms/other-problems/trial-division/js/trial-division"
+	);
 
 /**
  * @callback GetMeanExecTimeFn
@@ -301,5 +305,11 @@ benchmark(
 benchmark(
 	"reverse",
 	() => reverse(integerRange, 0),
+	100
+).outputResult();
+
+benchmark(
+	"trialDivision2",
+	() => trialDivision2(integerRange[0], 2, [], []),
 	100
 ).outputResult();

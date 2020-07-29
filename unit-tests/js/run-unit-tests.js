@@ -85,6 +85,10 @@ const { testCases: computeGreatestCommonDivisorTestCases }
 	);
 const { testCases: reverseTestCases }
 	= require("../../algorithms/other-problems/reverse/js/reverse-test-cases");
+const { testCases: trialDivisionTestCases }
+	= require(
+		"../../algorithms/other-problems/trial-division/js/trial-division-test-cases"
+	);
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -109,7 +113,8 @@ const testCases =
 		isSortedAscTestCases,
 		quicksortTestCases,
 		computeGreatestCommonDivisorTestCases,
-		reverseTestCases
+		reverseTestCases,
+		trialDivisionTestCases
 	);
 
 let areAllTestsPassed = true;
