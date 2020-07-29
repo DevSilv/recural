@@ -1,13 +1,11 @@
 const process = require("process");
 const { testCases: areArraysEqualTestCases }
 	= require(
-		"../../algorithms/other-problems/are-arrays-equal/js/"
-		+ "are-arrays-equal-test-cases"
+		"../../algorithms/other-problems/are-arrays-equal/js/are-arrays-equal-test-cases"
 	);
 const { testCases: splitIntoPartsTestCases }
 	= require(
-		"../../algorithms/other-problems/split-into-parts/js/"
-		+ "split-into-parts-test-cases"
+		"../../algorithms/other-problems/split-into-parts/js/split-into-parts-test-cases"
 	);
 const { testCases: sliceTestCases }
 	= require("../../algorithms/other-problems/slice/js/slice-test-cases");
@@ -35,35 +33,29 @@ const { testCases: binarySearchTestCases }
 	);
 const { testCases: sentinelFindFirstTestCases }
 	= require(
-		"../../algorithms/searching/sentinel-find-first/js/"
-		+ "sentinel-find-first-test-cases"
+		"../../algorithms/searching/sentinel-find-first/js/sentinel-find-first-test-cases"
 	);
 const { testCases: getFactorialTestCases }
 	= require(
-		"../../algorithms/other-problems/get-factorial/js/"
-		+ "get-factorial-test-cases"
+		"../../algorithms/other-problems/get-factorial/js/get-factorial-test-cases"
 	);
 const { testCases: getNthFibonacciNumTestCases }
 	= require(
-		"../../algorithms/other-problems/get-nth-fibonacci-num/js/"
-		+ "get-nth-fibonacci-num-test-cases"
+		"../../algorithms/other-problems/get-nth-fibonacci-num/js/get-nth-fibonacci-num-test-cases"
 	);
 const { testCases: multiplyTestCases }
 	= require("../../algorithms/other-problems/multiply/js/multiply-test-cases");
 const { testCases: generateRandomPermutationTestCases }
 	= require(
-		"../../algorithms/other-problems/generate-random-permutation/js/"
-		+ "generate-random-permutation-test-cases"
+		"../../algorithms/other-problems/generate-random-permutation/js/generate-random-permutation-test-cases"
 	);
 const { testCases: breadthFirstSearchTestCases }
 	= require(
-		"../../algorithms/searching/breadth-first-search/js/"
-		+ "breadth-first-search-test-cases"
+		"../../algorithms/searching/breadth-first-search/js/breadth-first-search-test-cases"
 	);
 const { testCases: depthFirstSearchTestCases }
 	= require(
-		"../../algorithms/searching/depth-first-search/js/"
-		+ "depth-first-search-test-cases"
+		"../../algorithms/searching/depth-first-search/js/depth-first-search-test-cases"
 	);
 const { testCases: isSortedAscTestCases }
 	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc-test-cases");

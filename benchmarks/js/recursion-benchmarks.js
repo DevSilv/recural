@@ -34,20 +34,17 @@ const { getFactorial }
 	= require("../../algorithms/other-problems/get-factorial/js/get-factorial");
 const { getNthFibonacciNum }
 	= require(
-		"../../algorithms/other-problems/get-nth-fibonacci-num/js/"
-		+ "get-nth-fibonacci-num"
+		"../../algorithms/other-problems/get-nth-fibonacci-num/js/get-nth-fibonacci-num"
 	);
 const { multiply }
 	= require("../../algorithms/other-problems/multiply/js/multiply");
 const { generateRandomPermutation }
 	= require(
-		"../../algorithms/other-problems/generate-random-permutation/js/"
-		+ "generate-random-permutation"
+		"../../algorithms/other-problems/generate-random-permutation/js/generate-random-permutation"
 	);
 const { breadthFirstSearch }
 	= require(
-		"../../algorithms/searching/breadth-first-search/js/"
-		+ "breadth-first-search"
+		"../../algorithms/searching/breadth-first-search/js/breadth-first-search"
 	);
 const { depthFirstSearch }
 	= require(
