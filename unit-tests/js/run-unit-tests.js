@@ -1,84 +1,74 @@
 const process = require("process");
-const areArraysEqualTestCases
+const { testCases: areArraysEqualTestCases }
 	= require(
 		"../../algorithms/other-problems/are-arrays-equal/js/"
 		+ "are-arrays-equal-test-cases"
-	).testCases;
-const splitIntoPartsTestCases
+	);
+const { testCases: splitIntoPartsTestCases }
 	= require(
 		"../../algorithms/other-problems/split-into-parts/js/"
 		+ "split-into-parts-test-cases"
-	).testCases;
-const sliceTestCases
-	= require("../../algorithms/other-problems/slice/js/slice-test-cases")
-		.testCases;
-const findFirstTestCases
-	= require("../../algorithms/searching/find-first/js/find-first-test-cases")
-		.testCases;
-const findAllTestCases
-	= require("../../algorithms/searching/find-all/js/find-all-test-cases")
-		.testCases;
-const reduceTestCases
-	= require("../../algorithms/other-problems/reduce/js/reduce-test-cases")
-		.testCases;
-const mapTestCases
-	= require("../../algorithms/other-problems/map/js/map-test-cases")
-		.testCases;
-const getLengthTestCases
+	);
+const { testCases: sliceTestCases }
+	= require("../../algorithms/other-problems/slice/js/slice-test-cases");
+const { testCases: findFirstTestCases }
+	= require("../../algorithms/searching/find-first/js/find-first-test-cases");
+const { testCases: findAllTestCases }
+	= require("../../algorithms/searching/find-all/js/find-all-test-cases");
+const { testCases: reduceTestCases }
+	= require("../../algorithms/other-problems/reduce/js/reduce-test-cases");
+const { testCases: mapTestCases }
+	= require("../../algorithms/other-problems/map/js/map-test-cases");
+const { testCases: getLengthTestCases }
 	= require(
 		"../../algorithms/other-problems/get-length/js/get-length-test-cases"
-	).testCases;
-const countIfTestCases
-	= require("../../algorithms/other-problems/count-if/js/count-if-test-cases")
-		.testCases;
-const splitIfTestCases
-	= require("../../algorithms/other-problems/split-if/js/split-if-test-cases")
-		.testCases;
-const joinTestCases
-	= require("../../algorithms/other-problems/join/js/join-test-cases")
-		.testCases;
-const binarySearchTestCases
+	);
+const { testCases: countIfTestCases }
+	= require("../../algorithms/other-problems/count-if/js/count-if-test-cases");
+const { testCases: splitIfTestCases }
+	= require("../../algorithms/other-problems/split-if/js/split-if-test-cases");
+const { testCases: joinTestCases }
+	= require("../../algorithms/other-problems/join/js/join-test-cases");
+const { testCases: binarySearchTestCases }
 	= require(
 		"../../algorithms/searching/binary-search/js/binary-search-test-cases"
-	).testCases;
-const sentinelFindFirstTestCases
+	);
+const { testCases: sentinelFindFirstTestCases }
 	= require(
 		"../../algorithms/searching/sentinel-find-first/js/"
 		+ "sentinel-find-first-test-cases"
-	).testCases;
-const getFactorialTestCases
+	);
+const { testCases: getFactorialTestCases }
 	= require(
 		"../../algorithms/other-problems/get-factorial/js/"
 		+ "get-factorial-test-cases"
-	).testCases;
-const getNthFibonacciNumTestCases
+	);
+const { testCases: getNthFibonacciNumTestCases }
 	= require(
 		"../../algorithms/other-problems/get-nth-fibonacci-num/js/"
 		+ "get-nth-fibonacci-num-test-cases"
-	).testCases;
-const multiplyTestCases
-	= require("../../algorithms/other-problems/multiply/js/multiply-test-cases")
-		.testCases;
-const generateRandomPermutationTestCases
+	);
+const { testCases: multiplyTestCases }
+	= require("../../algorithms/other-problems/multiply/js/multiply-test-cases");
+const { testCases: generateRandomPermutationTestCases }
 	= require(
 		"../../algorithms/other-problems/generate-random-permutation/js/"
 		+ "generate-random-permutation-test-cases"
-	).testCases;
-const breadthFirstSearchTestCases
+	);
+const { testCases: breadthFirstSearchTestCases }
 	= require(
 		"../../algorithms/searching/breadth-first-search/js/"
 		+ "breadth-first-search-test-cases"
-	).testCases;
-const depthFirstSearchTestCases
+	);
+const { testCases: depthFirstSearchTestCases }
 	= require(
 		"../../algorithms/searching/depth-first-search/js/"
 		+ "depth-first-search-test-cases"
-	).testCases;
+	);
 const { testCases: isSortedAscTestCases }
 	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc-test-cases");
-const quicksortTestCases
-	= require("../../algorithms/sorting/quicksort/js/quicksort-test-cases")
-		.testCases;
+const { testCases: quicksortTestCases }
+	= require("../../algorithms/sorting/quicksort/js/quicksort-test-cases");
 const { testCases: computeGreatestCommonDivisorTestCases }
 	= require(
 		"../../algorithms/other-problems/compute-greatest-common-divisor/js/compute-greatest-common-divisor-test-cases"
