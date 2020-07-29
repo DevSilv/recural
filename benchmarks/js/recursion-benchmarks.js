@@ -67,6 +67,7 @@ const { trialDivision2 }
 	= require(
 		"../../algorithms/other-problems/trial-division/js/trial-division"
 	);
+const tohModule = require("../../algorithms/other-problems/toh/js/toh");
 
 /**
  * @callback GetMeanExecTimeFn
@@ -311,5 +312,19 @@ benchmark(
 benchmark(
 	"trialDivision2",
 	() => trialDivision2(integerRange[0], 2, [], []),
+	100
+).outputResult();
+
+benchmark(
+	"toh",
+	() => tohModule.toh2(
+		new tohModule.State(
+			15,
+			0,
+			new tohModule.Peg("stk", integerRange.slice(0, 15)),
+			new tohModule.Peg("tmp", []),
+			new tohModule.Peg("res", [])
+		)
+	),
 	100
 ).outputResult();

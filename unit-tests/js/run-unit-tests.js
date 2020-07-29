@@ -89,6 +89,8 @@ const { testCases: trialDivisionTestCases }
 	= require(
 		"../../algorithms/other-problems/trial-division/js/trial-division-test-cases"
 	);
+const { testCases: tohTestCases }
+	= require("../../algorithms/other-problems/toh/js/toh-test-cases");
 
 const testCases =
 	areArraysEqualTestCases.concat(
@@ -114,7 +116,8 @@ const testCases =
 		quicksortTestCases,
 		computeGreatestCommonDivisorTestCases,
 		reverseTestCases,
-		trialDivisionTestCases
+		trialDivisionTestCases,
+		tohTestCases
 	);
 
 let areAllTestsPassed = true;
