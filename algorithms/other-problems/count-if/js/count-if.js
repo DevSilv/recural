@@ -11,17 +11,17 @@
  * @param {number} res
  */
 exports.countIf
-	= (arr, pred, res) =>
-		arr.length === 0
-			? res
-			: pred(arr[0])
-				? exports.countIf(
-					arr.slice(1),
-					pred,
-					res + 1
-				)
-				: exports.countIf(
-					arr.slice(1),
-					pred,
-					res
-				);
+    = (arr, pred, res) =>
+        arr.length === 0
+            ? res
+            : pred(arr[0])
+                ? exports.countIf(
+                    arr.slice(1),
+                    pred,
+                    res + 1
+                )
+                : exports.countIf(
+                    arr.slice(1),
+                    pred,
+                    res
+                );

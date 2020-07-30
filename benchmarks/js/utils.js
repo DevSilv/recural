@@ -4,10 +4,10 @@
  * @returns {number[]} The generated range
  */
 exports.generateIntegerRange
-	= (start, end) =>
-		Array
-			.from(
-				new Array(end + 1)
-					.keys()
-			)
-			.filter(elem => elem >= start);
+    = (start, end) =>
+        Array
+            .from(
+                new Array(end + 1)
+                    .keys()
+            )
+            .filter(elem => elem >= start);

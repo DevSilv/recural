@@ -4,7 +4,7 @@
  * @returns {number}
  */
 exports.getLength
-	= (arr, res) =>
-		arr[res] === undefined
-			? res
-			: exports.getLength(arr, res + 1);
+    = (arr, res) =>
+        arr[res] === undefined
+            ? res
+            : exports.getLength(arr, res + 1);

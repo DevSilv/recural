@@ -3,7 +3,7 @@
  * @returns {number}
  */
 exports.getFactorial
-	= num =>
-		num === 0
-			? 1
-			: num * exports.getFactorial(num - 1);
+    = num =>
+        num === 0
+            ? 1
+            : num * exports.getFactorial(num - 1);

@@ -6,19 +6,19 @@
  * @returns {T[][]}
  */
 exports.splitIntoParts
-	= (arr, len, res) =>
-		arr.length <= len
-			? res.concat(
-				[
-					arr
-				]
-			)
-			: exports.splitIntoParts(
-				arr.slice(len),
-				len,
-				res.concat(
-					[
-						arr.slice(0, len)
-					]
-				)
-			);
+    = (arr, len, res) =>
+        arr.length <= len
+            ? res.concat(
+                [
+                    arr
+                ]
+            )
+            : exports.splitIntoParts(
+                arr.slice(len),
+                len,
+                res.concat(
+                    [
+                        arr.slice(0, len)
+                    ]
+                )
+            );
