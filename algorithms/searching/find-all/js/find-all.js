@@ -18,7 +18,11 @@ exports.findAll
 				? exports.findAll(
 					arr.slice(1),
 					pred,
-					res.concat([arr[0]])
+					res.concat(
+						[
+							arr[0]
+						]
+					)
 				)
 				: exports.findAll(
 					arr.slice(1),

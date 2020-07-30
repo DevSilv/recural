@@ -125,7 +125,9 @@ exports.toh2
 				getPegCopy(state.tmp),
 				new exports.Peg(
 					state.res.name,
-					[state.stk.disksArr[0]].concat(state.res.disksArr)
+					[
+						state.stk.disksArr[0]
+					].concat(state.res.disksArr)
 				)
 			);
 		} else {

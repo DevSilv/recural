@@ -39,5 +39,7 @@ exports.reverse2
 			? res
 			: exports.reverse2(
 				arr.slice(1),
-				[arr[0]].concat(res)
+				[
+					arr[0]
+				].concat(res)
 			);

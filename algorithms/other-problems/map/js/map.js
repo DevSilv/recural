@@ -18,6 +18,8 @@ exports.map
 				arr.slice(1),
 				fn,
 				res.concat(
-					[fn(arr[0])]
+					[
+						fn(arr[0])
+					]
 				)
 			);
