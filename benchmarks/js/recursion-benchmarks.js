@@ -158,7 +158,12 @@ benchmark(
 
 benchmark(
 	"reduce",
-	() => reduce(integerRange, (res, cur) => res / cur, 1.0),
+	() =>
+		reduce(
+			integerRange,
+			(res, cur) => res / cur,
+			1.0
+		),
 	100
 ).outputResult();
 
@@ -200,13 +205,20 @@ benchmark(
 
 benchmark(
 	"sentinelFindFirst",
-	() => sentinelFindFirst(integerRange.concat([1500]), elem => elem === 1500),
+	() =>
+		sentinelFindFirst(
+			integerRange.concat([1500]),
+			elem => elem === 1500
+		),
 	100
 ).outputResult();
 
 benchmark(
 	"getFactorial",
-	() => getFactorial(integerRange[Math.floor(integerRange.length / 2)]),
+	() =>
+		getFactorial(
+			integerRange[Math.floor(integerRange.length / 2)]
+		),
 	100
 ).outputResult();
 
@@ -234,13 +246,34 @@ benchmark(
 const complexMockGraphWithCycles
 	= new Map(
 		[
-			[0, [0, 1, 2, 3, 4, 5, 6]],
-			[1, [0, 1, 2, 3, 4, 5, 6]],
-			[2, [0, 2, 3, 4, 5, 6]],
-			[3, [0, 3, 4, 5, 6]],
-			[4, [0, 4, 5, 6]],
-			[5, [0, 5, 6]],
-			[6, [0, 6]]
+			[
+				0,
+				[0, 1, 2, 3, 4, 5, 6]
+			],
+			[
+				1,
+				[0, 1, 2, 3, 4, 5, 6]
+			],
+			[
+				2,
+				[0, 2, 3, 4, 5, 6]
+			],
+			[
+				3,
+				[0, 3, 4, 5, 6]
+			],
+			[
+				4,
+				[0, 4, 5, 6]
+			],
+			[
+				5,
+				[0, 5, 6]
+			],
+			[
+				6,
+				[0, 6]
+			]
 		]
 	);
 
@@ -318,7 +351,10 @@ benchmark(
 		new tohModule.State(
 			15,
 			0,
-			new tohModule.Peg("stk", integerRange.slice(0, 15)),
+			new tohModule.Peg(
+				"stk",
+				integerRange.slice(0, 15)
+			),
 			new tohModule.Peg("tmp", []),
 			new tohModule.Peg("res", [])
 		)

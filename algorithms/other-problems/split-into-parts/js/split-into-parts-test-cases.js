@@ -7,16 +7,40 @@ exports.testCases = [
 	new TestCase(
 		"splitIntoParts",
 		() => splitIntoParts([0, 1, 2, 3, 4], 1, []),
-		res => deepAreArraysEqual(res, [[0], [1], [2], [3], [4]])
+		res =>
+			deepAreArraysEqual(
+				res,
+				[
+					[0],
+					[1],
+					[2],
+					[3],
+					[4]
+				]
+			)
 	),
 	new TestCase(
 		"splitIntoParts",
 		() => splitIntoParts([0, 1, 2, 3, 4], 2, []),
-		res => deepAreArraysEqual(res, [[0, 1], [2, 3], [4]])
+		res =>
+			deepAreArraysEqual(
+				res,
+				[
+					[0, 1],
+					[2, 3],
+					[4]
+				]
+			)
 	),
 	new TestCase(
 		"splitIntoParts",
 		() => splitIntoParts([0, 1, 2, 3, 4], 20, []),
-		res => deepAreArraysEqual(res, [[0, 1, 2, 3, 4]])
+		res =>
+			deepAreArraysEqual(
+				res,
+				[
+					[0, 1, 2, 3, 4]
+				]
+			)
 	)
 ];

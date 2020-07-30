@@ -6,22 +6,42 @@ const { reduce } = require("./reduce");
 exports.testCases = [
 	new TestCase(
 		"reduce",
-		() => reduce([0, 1, 2, 3, 4], (res, cur) => res + cur, 0),
+		() =>
+			reduce(
+				[0, 1, 2, 3, 4],
+				(res, cur) => res + cur,
+				0
+			),
 		res => res === 0 + 1 + 2 + 3 + 4
 	),
 	new TestCase(
 		"reduce",
-		() => reduce([0, 1, 2, 3, 4], (res, cur) => res - cur, 0),
+		() =>
+			reduce(
+				[0, 1, 2, 3, 4],
+				(res, cur) => res - cur,
+				0
+			),
 		res => res === 0 - 1 - 2 - 3 - 4
 	),
 	new TestCase(
 		"reduce",
-		() => reduce([1, 2, 3, 4], (res, cur) => res * cur, 1),
+		() =>
+			reduce(
+				[1, 2, 3, 4],
+				(res, cur) => res * cur,
+				1
+			),
 		res => res === 1 * 2 * 3 * 4
 	),
 	new TestCase(
 		"reduce",
-		() => reduce([1, 2, 3, 4], (res, cur) => res / cur, 1),
+		() =>
+			reduce(
+				[1, 2, 3, 4],
+				(res, cur) => res / cur,
+				1
+			),
 		res => res === 1 / 2 / 3 / 4
 	),
 	new TestCase(
@@ -36,14 +56,25 @@ exports.testCases = [
 	),
 	new TestCase(
 		"reduce",
-		() => reduce(["A", "B", "C", "D", "E"], (res, cur) => res + cur, ""),
+		() =>
+			reduce(
+				["A", "B", "C", "D", "E"],
+				(res, cur) => res + cur,
+				""
+			),
 		res => res === "ABCDE"
 	),
 	new TestCase(
 		"reduce",
 		() =>
 			reduce(
-				[[0], [1], [2], [3], [4]],
+				[
+					[0],
+					[1],
+					[2],
+					[3],
+					[4]
+				],
 				(res, cur) => res.concat(cur),
 				[]
 			),

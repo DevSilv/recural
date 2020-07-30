@@ -32,17 +32,47 @@ exports.testCases = [
 	),
 	new TestCase(
 		"deepAreArraysEqual",
-		() => deepAreArraysEqual([[1, 2], [3]], [[1, 2], [3]]),
+		() =>
+			deepAreArraysEqual(
+				[
+					[1, 2],
+					[3]
+				],
+				[
+					[1, 2],
+					[3]
+				]
+			),
 		res => res === true
 	),
 	new TestCase(
 		"deepAreArraysEqual",
-		() => deepAreArraysEqual([[1, 2], [3]], [[1, 2], 3]),
+		() =>
+			deepAreArraysEqual(
+				[
+					[1, 2],
+					[3]
+				],
+				[
+					[1, 2],
+					3
+				]
+			),
 		res => res === false
 	),
 	new TestCase(
 		"deepAreArraysEqual",
-		() => deepAreArraysEqual([[1, 2], [3]], [[1], [2, 3]]),
+		() =>
+			deepAreArraysEqual(
+				[
+					[1, 2],
+					[3]
+				],
+				[
+					[1],
+					[2, 3]
+				]
+			),
 		res => res === false
 	)
 ];

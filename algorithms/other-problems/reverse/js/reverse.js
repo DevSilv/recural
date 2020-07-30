@@ -37,4 +37,9 @@ exports.reverse2
 	= (arr, res) =>
 		arr.length === 0
 			? res
-			: exports.reverse2(arr.slice(1), [arr[0]].concat(res));
+			: exports.reverse2(
+				arr.slice(1),
+				[
+					arr[0]
+				].concat(res)
+			);

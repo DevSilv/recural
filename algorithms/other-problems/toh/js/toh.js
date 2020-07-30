@@ -14,7 +14,12 @@ exports.Peg
  * @param {exports.Peg} peg
  * @returns {exports.Peg}
  */
-const getPegCopy = peg => new exports.Peg(peg.name, peg.disksArr.slice());
+const getPegCopy
+	= peg =>
+		new exports.Peg(
+			peg.name,
+			peg.disksArr.slice()
+		);
 
 // =============================================================================
 
@@ -90,9 +95,15 @@ const reorderPegs
 		new exports.State(
 			state.n,
 			state.movesCount,
-			getPegCopy(findPeg(state, referenceState.stk.name)),
-			getPegCopy(findPeg(state, referenceState.tmp.name)),
-			getPegCopy(findPeg(state, referenceState.res.name))
+			getPegCopy(
+				findPeg(state, referenceState.stk.name)
+			),
+			getPegCopy(
+				findPeg(state, referenceState.tmp.name)
+			),
+			getPegCopy(
+				findPeg(state, referenceState.res.name)
+			)
 		);
 
 /**
@@ -107,11 +118,16 @@ exports.toh2
 			return new exports.State(
 				state.n,
 				state.movesCount + 1,
-				new exports.Peg(state.stk.name, state.stk.disksArr.slice(1)),
+				new exports.Peg(
+					state.stk.name,
+					state.stk.disksArr.slice(1)
+				),
 				getPegCopy(state.tmp),
 				new exports.Peg(
 					state.res.name,
-					[state.stk.disksArr[0]].concat(state.res.disksArr)
+					[
+						state.stk.disksArr[0]
+					].concat(state.res.disksArr)
 				)
 			);
 		} else {
