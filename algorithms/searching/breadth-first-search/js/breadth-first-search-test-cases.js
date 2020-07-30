@@ -39,62 +39,62 @@ const initialVt = 0;
 exports.testCases = [
 	new TestCase(
 		"breadthFirstSearch",
-		breadthFirstSearch,
-		[
-			vt => vt === 0,
-			vt => simpleMockGraphWithoutCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
-		],
+		() =>
+			breadthFirstSearch(
+				vt => vt === 0,
+				vt => simpleMockGraphWithoutCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		res => res === 0
 	),
 	new TestCase(
 		"breadthFirstSearch",
-		breadthFirstSearch,
-		[
-			vt => vt === 1,
-			vt => simpleMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
-		],
+		() =>
+			breadthFirstSearch(
+				vt => vt === 1,
+				vt => simpleMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		res => res === 1
 	),
 	new TestCase(
 		"breadthFirstSearch",
-		breadthFirstSearch,
-		[
-			vt => vt === 2,
-			vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
-		],
+		() =>
+			breadthFirstSearch(
+				vt => vt === 2,
+				vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		res => res === 2
 	),
 	new TestCase(
 		"breadthFirstSearch",
-		breadthFirstSearch,
-		[
-			vt => vt === 6,
-			vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
-		],
+		() =>
+			breadthFirstSearch(
+				vt => vt === 6,
+				vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		res => res === 6
 	),
 	new TestCase(
 		"breadthFirstSearch",
-		breadthFirstSearch,
-		[
-			vt => vt === 7,
-			vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
-			initialVt,
-			[],
-			[]
-		],
+		() =>
+			breadthFirstSearch(
+				vt => vt === 7,
+				vt => complexMockGraphWithCycles.get(vt).filter(v => v !== vt),
+				initialVt,
+				[],
+				[]
+			),
 		res => res === undefined
 	)
 ];

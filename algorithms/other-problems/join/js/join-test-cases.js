@@ -6,20 +6,17 @@ const { join } = require("./join");
 exports.testCases = [
 	new TestCase(
 		"join",
-		join,
-		[[0, 1, 2], [3, 4]],
+		() => join([0, 1, 2], [3, 4]),
 		res => deepAreArraysEqual(res, [0, 1, 2, 3, 4])
 	),
 	new TestCase(
 		"join",
-		join,
-		[[], []],
+		() => join([], []),
 		res => deepAreArraysEqual(res, [])
 	),
 	new TestCase(
 		"join",
-		join,
-		[[[3], [4]], [0, 1, 2]],
+		() => join([[3], [4]], [0, 1, 2]),
 		res => deepAreArraysEqual(res, [[3], [4], 0, 1, 2])
 	)
 ];

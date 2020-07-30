@@ -19,47 +19,27 @@ const containsSameElements
 exports.testCases = [
 	new TestCase(
 		"generateRandomPermutation",
-		generateRandomPermutation,
-		[
-			mockArr,
-			[]
-		],
+		() => generateRandomPermutation(mockArr, []),
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
-		generateRandomPermutation,
-		[
-			mockArr,
-			[]
-		],
+		() => generateRandomPermutation(mockArr, []),
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
-		generateRandomPermutation,
-		[
-			mockArr,
-			[]
-		],
+		() => generateRandomPermutation(mockArr, []),
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
-		generateRandomPermutation,
-		[
-			mockArr,
-			[]
-		],
+		() => generateRandomPermutation(mockArr, []),
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
-		generateRandomPermutation,
-		[
-			mockArr,
-			[]
-		],
+		() => generateRandomPermutation(mockArr, []),
 		containsSameElements
 	)
 ];
