@@ -15,4 +15,8 @@ exports.reduce
 	= (arr, fn, res) =>
 		arr.length === 0
 			? res
-			: exports.reduce(arr.slice(1), fn, fn(res, arr[0]));
+			: exports.reduce(
+				arr.slice(1),
+				fn,
+				fn(res, arr[0])
+			);

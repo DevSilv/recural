@@ -158,7 +158,12 @@ benchmark(
 
 benchmark(
 	"reduce",
-	() => reduce(integerRange, (res, cur) => res / cur, 1.0),
+	() =>
+		reduce(
+			integerRange,
+			(res, cur) => res / cur,
+			1.0
+		),
 	100
 ).outputResult();
 
@@ -200,13 +205,20 @@ benchmark(
 
 benchmark(
 	"sentinelFindFirst",
-	() => sentinelFindFirst(integerRange.concat([1500]), elem => elem === 1500),
+	() =>
+		sentinelFindFirst(
+			integerRange.concat([1500]),
+			elem => elem === 1500
+		),
 	100
 ).outputResult();
 
 benchmark(
 	"getFactorial",
-	() => getFactorial(integerRange[Math.floor(integerRange.length / 2)]),
+	() =>
+		getFactorial(
+			integerRange[Math.floor(integerRange.length / 2)]
+		),
 	100
 ).outputResult();
 
@@ -318,7 +330,10 @@ benchmark(
 		new tohModule.State(
 			15,
 			0,
-			new tohModule.Peg("stk", integerRange.slice(0, 15)),
+			new tohModule.Peg(
+				"stk",
+				integerRange.slice(0, 15)
+			),
 			new tohModule.Peg("tmp", []),
 			new tohModule.Peg("res", [])
 		)

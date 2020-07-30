@@ -11,7 +11,10 @@ exports.shallowAreArraysEqual
 		arr1.length === 0 && arr2.length === 0
 			? true
 			: arr1[0] === arr2[0]
-				? exports.shallowAreArraysEqual(arr1.slice(1), arr2.slice(1))
+				? exports.shallowAreArraysEqual(
+					arr1.slice(1),
+					arr2.slice(1)
+				)
 				: false;
 
 /**

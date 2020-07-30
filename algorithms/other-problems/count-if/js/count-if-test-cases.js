@@ -14,7 +14,12 @@ exports.testCases = [
 	),
 	new TestCase(
 		"countIf",
-		() => countIf([n => n * 2, n => n * 3, n => n * 4], fn => fn(2) > 5, 0),
+		() =>
+			countIf(
+				[n => n * 2, n => n * 3, n => n * 4],
+				fn => fn(2) > 5,
+				0
+			),
 		res => res === 2
 	)
 ];
