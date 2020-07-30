@@ -37,10 +37,3 @@ exports.computeGreatestCommonDivisorEuclideanAlgorithm2
 					b - a,
 					stepsCount + 1
 				);
-
-const result3
-	= exports.computeGreatestCommonDivisorEuclideanAlgorithm2(1870, 4389, 0);
-console.debug(`Passed? ${result3[0] === 11}; steps: ${result3[1]}`);
-const result4
-	= exports.computeGreatestCommonDivisorEuclideanAlgorithm2(33263, 215441, 0);
-console.debug(`Passed? ${result4[0] === 29}; steps: ${result4[1]}`);

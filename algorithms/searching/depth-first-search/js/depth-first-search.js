@@ -82,13 +82,3 @@ const mockGraph
 			]
 		]
 	);
-
-console.debug(
-	exports.depthFirstSearch(
-		vt => vt === 6,
-		vt => mockGraph.get(vt).filter(v => v !== vt),
-		0,
-		[],
-		[]
-	)
-);
