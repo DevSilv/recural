@@ -58,7 +58,9 @@ const { testCases: depthFirstSearchTestCases }
 		"../../algorithms/searching/depth-first-search/js/depth-first-search-test-cases"
 	);
 const { testCases: isSortedAscTestCases }
-	= require("../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc-test-cases");
+	= require(
+		"../../algorithms/sorting/is-sorted-asc/js/is-sorted-asc-test-cases"
+	);
 const { testCases: quicksortTestCases }
 	= require("../../algorithms/sorting/quicksort/js/quicksort-test-cases");
 const { testCases: computeGreatestCommonDivisorTestCases }
