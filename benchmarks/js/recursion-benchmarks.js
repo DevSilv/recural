@@ -113,7 +113,9 @@ const benchmark
                 () => {
                     processModule.stdout.write(`${benchmarkedFnName}\n`);
                     processModule.stdout.write(`${meanExecTime[0]}s\n`);
-                    processModule.stdout.write(`${meanExecTime[1] / 1000000}ms\n\n`);
+                    processModule.stdout.write(
+                        `${meanExecTime[1] / 1000000}ms\n\n`
+                    );
                 }
         };
     };

@@ -22,9 +22,13 @@ const { testCases: getLengthTestCases }
         "../../algorithms/other-problems/get-length/js/get-length-test-cases"
     );
 const { testCases: countIfTestCases }
-    = require("../../algorithms/other-problems/count-if/js/count-if-test-cases");
+    = require(
+        "../../algorithms/other-problems/count-if/js/count-if-test-cases"
+    );
 const { testCases: splitIfTestCases }
-    = require("../../algorithms/other-problems/split-if/js/split-if-test-cases");
+    = require(
+        "../../algorithms/other-problems/split-if/js/split-if-test-cases"
+    );
 const { testCases: joinTestCases }
     = require("../../algorithms/other-problems/join/js/join-test-cases");
 const { testCases: binarySearchTestCases }
@@ -44,7 +48,9 @@ const { testCases: getNthFibonacciNumTestCases }
         "../../algorithms/other-problems/get-nth-fibonacci-num/js/get-nth-fibonacci-num-test-cases"
     );
 const { testCases: multiplyTestCases }
-    = require("../../algorithms/other-problems/multiply/js/multiply-test-cases");
+    = require(
+        "../../algorithms/other-problems/multiply/js/multiply-test-cases"
+    );
 const { testCases: generateRandomPermutationTestCases }
     = require(
         "../../algorithms/other-problems/generate-random-permutation/js/generate-random-permutation-test-cases"

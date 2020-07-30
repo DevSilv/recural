@@ -82,7 +82,8 @@ exports.testCases = [
         () =>
             breadthFirstSearch(
                 vt => vt === 0,
-                vt => simpleMockGraphWithoutCycles.get(vt).filter(v => v !== vt),
+                vt =>
+                    simpleMockGraphWithoutCycles.get(vt).filter(v => v !== vt),
                 initialVt,
                 [],
                 []

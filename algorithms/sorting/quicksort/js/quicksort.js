@@ -61,9 +61,9 @@ const partition
  * @description Note: I do not see a way to express the function
  *     using only expressions and no statements while preserving
  *     its intuitiveness. For example, replacing the invokation of the partition
- *     function with additional helper parameters would be less intuitive: firstly,
- *     it would demand that the user invokes the partition function once
- *     before invoking the quicksort function, and passes its result
+ *     function with additional helper parameters would be less intuitive:
+ *     firstly, it would demand that the user invokes the partition function
+ *     once before invoking the quicksort function, and passes its result
  *     in the invokation of the quicksort function; secondly, it the flow
  *     of control would change — the recursive invokations of the quicksort
  *     function would acquire the array arr partitioned BEFORE the invokation
@@ -192,9 +192,10 @@ const q = (x, y) => x === y; // Strict equality
  * @param {number[]} a
  * @returns {number[]}
  * @description
- *     - Purpose: only to check how concisely the function may be written retaining
- *     some readability
- *     - The parameters are in the same order as in case of the quicksort2 function
+ *     - Purpose: only to check how concisely the function may be written
+ *     retaining some readability
+ *     - The parameters are in the same order as in case of the quicksort2
+ *     function
  *     - Max. line count: 80 characters
  */
 const qs
