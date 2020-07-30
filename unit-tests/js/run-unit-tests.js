@@ -108,7 +108,7 @@ testCases.forEach(
 	testCase => {
 		const result
 			= testCase.isTestPassedCallback(
-				testCase.fn()//.apply(undefined, testCase.fnInput)
+				testCase.fn()
 			);
 
 		areAllTestsPassed = areAllTestsPassed && result;

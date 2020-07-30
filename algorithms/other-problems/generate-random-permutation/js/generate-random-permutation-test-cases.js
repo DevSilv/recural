@@ -20,41 +20,26 @@ exports.testCases = [
 	new TestCase(
 		"generateRandomPermutation",
 		() => generateRandomPermutation(mockArr, []),
-		[
-
-		],
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
 		() => generateRandomPermutation(mockArr, []),
-		[
-
-		],
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
 		() => generateRandomPermutation(mockArr, []),
-		[
-
-		],
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
 		() => generateRandomPermutation(mockArr, []),
-		[
-
-		],
 		containsSameElements
 	),
 	new TestCase(
 		"generateRandomPermutation",
 		() => generateRandomPermutation(mockArr, []),
-		[
-
-		],
 		containsSameElements
 	)
 ];

@@ -10,9 +10,6 @@ exports.testCases = [
 				[],
 				0
 			),
-		[
-
-		],
 		res => res === true
 	),
 	new TestCase(
@@ -23,9 +20,6 @@ exports.testCases = [
 				[0],
 				0
 			),
-		[
-
-		],
 		res => res === true
 	),
 	new TestCase(
@@ -36,9 +30,6 @@ exports.testCases = [
 				[0, 1, 2, 3],
 				0
 			),
-		[
-
-		],
 		res => res === true
 	),
 	new TestCase(
@@ -49,9 +40,6 @@ exports.testCases = [
 				[0, 1, 1, 2, 3],
 				0
 			),
-		[
-
-		],
 		res => res === true
 	),
 	new TestCase(
@@ -62,9 +50,6 @@ exports.testCases = [
 				[3, 2, 1, 0],
 				0
 			),
-		[
-
-		],
 		res => res === false
 	),
 	new TestCase(
@@ -75,9 +60,6 @@ exports.testCases = [
 				[0, 3, 2, 1, 4],
 				0
 			),
-		[
-
-		],
 		res => res === false
 	),
 	new TestCase(
@@ -88,9 +70,6 @@ exports.testCases = [
 				[0, 1, 2, 3, 0],
 				0
 			),
-		[
-
-		],
 		res => res === false
 	)
 ];

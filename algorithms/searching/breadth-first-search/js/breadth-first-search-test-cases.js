@@ -47,9 +47,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res => res === 0
 	),
 	new TestCase(
@@ -62,9 +59,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res => res === 1
 	),
 	new TestCase(
@@ -77,9 +71,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res => res === 2
 	),
 	new TestCase(
@@ -92,9 +83,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res => res === 6
 	),
 	new TestCase(
@@ -107,9 +95,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res => res === undefined
 	)
 ];

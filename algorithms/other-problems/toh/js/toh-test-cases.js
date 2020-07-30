@@ -42,9 +42,6 @@ exports.testCases = [
 				mockGlobalState1[1],
 				mockGlobalState1[2]
 			),
-		[
-
-		],
 		() =>
 			areArraysEqualModule.deepAreArraysEqual(
 				mockGlobalState1[0].disksArr,
@@ -66,9 +63,6 @@ exports.testCases = [
 				mockGlobalState2[1],
 				mockGlobalState2[2]
 			),
-		[
-
-		],
 		() =>
 			areArraysEqualModule.deepAreArraysEqual(
 				mockGlobalState2[0].disksArr,
@@ -90,9 +84,6 @@ exports.testCases = [
 				mockGlobalState3[1],
 				mockGlobalState3[2]
 			),
-		[
-
-		],
 		() =>
 			areArraysEqualModule.deepAreArraysEqual(
 				mockGlobalState3[0].disksArr,
@@ -117,9 +108,6 @@ exports.testCases = [
 					new Peg("res", [])
 				)
 			),
-		[
-
-		],
 		result =>
 			areArraysEqualModule.deepAreArraysEqual(
 				result.stk.disksArr,
@@ -144,9 +132,6 @@ exports.testCases = [
 					new Peg("res", [])
 				)
 			),
-		[
-
-		],
 		result =>
 			areArraysEqualModule.deepAreArraysEqual(
 				result.stk.disksArr,
@@ -171,9 +156,6 @@ exports.testCases = [
 					new Peg("res", [])
 				)
 			),
-		[
-
-		],
 		result =>
 			areArraysEqualModule.deepAreArraysEqual(
 				result.stk.disksArr,

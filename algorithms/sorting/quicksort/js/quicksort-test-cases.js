@@ -31,9 +31,6 @@ exports.testCases = [
 				0,
 				mockArrs[0].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -49,9 +46,6 @@ exports.testCases = [
 				0,
 				mockArrs[1].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -67,9 +61,6 @@ exports.testCases = [
 				0,
 				mockArrs[2].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -85,9 +76,6 @@ exports.testCases = [
 				0,
 				mockArrs[3].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -103,9 +91,6 @@ exports.testCases = [
 				0,
 				mockArrs[4].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -121,9 +106,6 @@ exports.testCases = [
 				0,
 				mockArrs[5].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -139,9 +121,6 @@ exports.testCases = [
 				0,
 				mockArrs[6].length - 1
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -161,9 +140,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -183,9 +159,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -205,9 +178,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -227,9 +197,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -249,9 +216,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -271,9 +235,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
@@ -293,9 +254,6 @@ exports.testCases = [
 				[],
 				[]
 			),
-		[
-
-		],
 		res =>
 			isSortedAsc(
 				(firstElem, secondElem) => firstElem > secondElem,
