@@ -9,37 +9,37 @@ const mockArr = generateIntegerRange(0, 100);
  * @returns {boolean}
  */
 const containsSameElements
-	= res =>
-		mockArr.every(
-			elem =>
-				findAll(res, e => e === elem, []).length
-				=== findAll(mockArr, e => e === elem, []).length
-		);
+    = res =>
+        mockArr.every(
+            elem =>
+                findAll(res, e => e === elem, []).length
+                === findAll(mockArr, e => e === elem, []).length
+        );
 
 exports.testCases = [
-	new TestCase(
-		"generateRandomPermutation",
-		() => generateRandomPermutation(mockArr, []),
-		containsSameElements
-	),
-	new TestCase(
-		"generateRandomPermutation",
-		() => generateRandomPermutation(mockArr, []),
-		containsSameElements
-	),
-	new TestCase(
-		"generateRandomPermutation",
-		() => generateRandomPermutation(mockArr, []),
-		containsSameElements
-	),
-	new TestCase(
-		"generateRandomPermutation",
-		() => generateRandomPermutation(mockArr, []),
-		containsSameElements
-	),
-	new TestCase(
-		"generateRandomPermutation",
-		() => generateRandomPermutation(mockArr, []),
-		containsSameElements
-	)
+    new TestCase(
+        "generateRandomPermutation",
+        () => generateRandomPermutation(mockArr, []),
+        containsSameElements
+    ),
+    new TestCase(
+        "generateRandomPermutation",
+        () => generateRandomPermutation(mockArr, []),
+        containsSameElements
+    ),
+    new TestCase(
+        "generateRandomPermutation",
+        () => generateRandomPermutation(mockArr, []),
+        containsSameElements
+    ),
+    new TestCase(
+        "generateRandomPermutation",
+        () => generateRandomPermutation(mockArr, []),
+        containsSameElements
+    ),
+    new TestCase(
+        "generateRandomPermutation",
+        () => generateRandomPermutation(mockArr, []),
+        containsSameElements
+    )
 ];

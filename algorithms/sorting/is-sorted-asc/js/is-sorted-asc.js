@@ -14,10 +14,10 @@
  * @returns {boolean}
  */
 exports.isSortedAsc
-	= (isGreaterFn, arr, cur) =>
-		arr.length < 2
-			|| cur > arr.length
-			? true
-			: isGreaterFn(arr[cur], arr[cur + 1])
-				? false
-				: exports.isSortedAsc(isGreaterFn, arr, cur + 1);
+    = (isGreaterFn, arr, cur) =>
+        arr.length < 2
+            || cur > arr.length
+            ? true
+            : isGreaterFn(arr[cur], arr[cur + 1])
+                ? false
+                : exports.isSortedAsc(isGreaterFn, arr, cur + 1);

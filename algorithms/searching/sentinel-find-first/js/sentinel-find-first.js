@@ -10,12 +10,12 @@
  * @returns {undefined|any}
  */
 exports.sentinelFindFirst
-	= (arr, pred) =>
-		pred(arr[0])
-			? arr.length > 1
-				? arr[0]
-				: undefined
-			: exports.sentinelFindFirst(
-				arr.slice(1),
-				pred
-			);
+    = (arr, pred) =>
+        pred(arr[0])
+            ? arr.length > 1
+                ? arr[0]
+                : undefined
+            : exports.sentinelFindFirst(
+                arr.slice(1),
+                pred
+            );
