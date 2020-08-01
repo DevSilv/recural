@@ -43,6 +43,11 @@ exports.test
         const result = testRecursive(testFnsArr, true);
         testDebugFn(result);
 
+        /**
+         * @todo It seems that in case I'm testing this function itself, a test
+         *  cannot failt, or else process will exit. How to test it with failing
+         *  tests?
+         */
         if (result === false) {
             process.exit(1);
         }
