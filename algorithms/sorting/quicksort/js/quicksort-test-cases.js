@@ -9,6 +9,10 @@ const { generateRandomPermutation }
     );
 const { generateIntegerRange } = require("../../../../benchmarks/js/utils");
 const { isSortedAsc } = require("../../is-sorted-asc/js/is-sorted-asc");
+/**
+ * @todo Format all the code in the repository such that if a parameter list
+ *  does not fit into one line, each parameter is put on a separate line
+ */
 
 
 test(
