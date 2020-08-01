@@ -1,4 +1,5 @@
-const { TestCase } = require("../../../../unit-tests/js/test-case");
+// const { TestCase } = require("../../../../unit-tests/js/test-case");
+const { test } = require("../../../../test-runner/test");
 const { generateRandomPermutation } = require("./generate-random-permutation");
 const { generateIntegerRange } = require("../../../../benchmarks/js/utils");
 const { findAll } = require("../../../searching/find-all/js/find-all");
@@ -17,29 +18,57 @@ const containsSameElements
         );
 
 exports.testCases = [
-    new TestCase(
-        "generateRandomPermutation",
-        () => generateRandomPermutation(mockArr, []),
-        containsSameElements
-    ),
-    new TestCase(
-        "generateRandomPermutation",
-        () => generateRandomPermutation(mockArr, []),
-        containsSameElements
-    ),
-    new TestCase(
-        "generateRandomPermutation",
-        () => generateRandomPermutation(mockArr, []),
-        containsSameElements
-    ),
-    new TestCase(
-        "generateRandomPermutation",
-        () => generateRandomPermutation(mockArr, []),
-        containsSameElements
-    ),
-    new TestCase(
-        "generateRandomPermutation",
-        () => generateRandomPermutation(mockArr, []),
-        containsSameElements
-    )
+    // new TestCase(
+    //     "generateRandomPermutation",
+    //     () => generateRandomPermutation(mockArr, []),
+    //     containsSameElements
+    // ),
+    // new TestCase(
+    //     "generateRandomPermutation",
+    //     () => generateRandomPermutation(mockArr, []),
+    //     containsSameElements
+    // ),
+    // new TestCase(
+    //     "generateRandomPermutation",
+    //     () => generateRandomPermutation(mockArr, []),
+    //     containsSameElements
+    // ),
+    // new TestCase(
+    //     "generateRandomPermutation",
+    //     () => generateRandomPermutation(mockArr, []),
+    //     containsSameElements
+    // ),
+    // new TestCase(
+    //     "generateRandomPermutation",
+    //     () => generateRandomPermutation(mockArr, []),
+    //     containsSameElements
+    // )
 ];
+
+test(
+    res => {
+        console.log(`generateRandomPermutation: ${res}`);
+    },
+    [
+        () =>
+            containsSameElements(
+                generateRandomPermutation(mockArr, [])
+            ),
+        () =>
+            containsSameElements(
+                generateRandomPermutation(mockArr, [])
+            ),
+        () =>
+            containsSameElements(
+                generateRandomPermutation(mockArr, [])
+            ),
+        () =>
+            containsSameElements(
+                generateRandomPermutation(mockArr, [])
+            ),
+        () =>
+            containsSameElements(
+                generateRandomPermutation(mockArr, [])
+            )
+    ]
+);
