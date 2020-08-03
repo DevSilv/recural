@@ -11,7 +11,7 @@ for file in ${testFiles}
 do
     node "${file}"
 
-    if [[ "${?}" != "0" ]]
+    if [[ "${?}" != 0 ]]
     then exit 1
     fi
 done
