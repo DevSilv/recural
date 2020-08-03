@@ -1,4 +1,4 @@
-const { test } = require("../../../../test-runner/test");
+const { test } = require("../../../../test-runners/js/test");
 const {
     computeGreatestCommonDivisorEuclideanAlgorithm,
     computeGreatestCommonDivisorEuclideanAlgorithm2

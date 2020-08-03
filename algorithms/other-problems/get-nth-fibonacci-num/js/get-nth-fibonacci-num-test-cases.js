@@ -1,4 +1,4 @@
-const { test } = require("../../../../test-runner/test");
+const { test } = require("../../../../test-runners/js/test");
 const { getNthFibonacciNum } = require("./get-nth-fibonacci-num");
 
 test(

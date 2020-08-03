@@ -1,4 +1,4 @@
-const { test } = require("../../../../test-runner/test");
+const { test } = require("../../../../test-runners/js/test");
 const { generateRandomPermutation } = require("./generate-random-permutation");
 const { generateIntegerRange } = require("../../../../benchmarks/js/utils");
 const { findAll } = require("../../../searching/find-all/js/find-all");
