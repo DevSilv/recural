@@ -2,7 +2,7 @@
 
 scriptPath="${0}"
 scriptDirPath="$(dirname ${scriptPath})"
-testFiles="$(find ${scriptDirPath}/../algorithms/ -type f -name '*-test-cases.js')"
+testFiles="$(find ${scriptDirPath}/../../algorithms/ -type f -name '*-test-cases.js')"
 status=0
 
 for file in ${testFiles}
