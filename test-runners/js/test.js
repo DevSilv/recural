@@ -41,7 +41,6 @@ const testRecursive
 exports.test
     = (testDebugFn, testFnsArr) => {
         const result = testRecursive(testFnsArr, true);
-        testDebugFn(result);
 
         /**
          * @todo It seems that in case I'm testing this function itself, a test
@@ -49,7 +48,10 @@ exports.test
          *  tests?
          */
         if (result === false) {
-            process.exit(1);
+            testDebugFn(result);
+            process.exitCode = 1;
+
+            return false;
         }
 
         return result;
