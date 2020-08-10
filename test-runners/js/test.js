@@ -54,5 +54,5 @@ exports.test
             return false;
         }
 
-        return result;
+        return true;
     };
