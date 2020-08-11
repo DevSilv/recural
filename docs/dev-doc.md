@@ -87,3 +87,23 @@
     ```
 
     In that, maybe, it will be easier to differentiate the importance of imported module members. Consequently, it is expected that the clarity of the code will increase.
+
+### Bash
+
+- Always put at least one pair of quotation marks (`""`) within a piece of code. Particularly, if a piece of code does not require quotation marks at all, put them "outside-most" (i.e., around this whole piece of code).
+
+    A piece of code is to be understood differently, based on what code it is. I suspect that most often it will be the right hand side of an assignment, a line, the "inside" of an `if` clause, and the like.
+
+    For example, instead of this:
+
+    ```bash
+    someVariable1="X"
+    someVariable2=$(echo "${someVariable1}")
+    ```
+
+    do this:
+
+    ```bash
+    someVariable1="X"
+    someVariable2="$(echo ${someVariable1})"
+    ```
