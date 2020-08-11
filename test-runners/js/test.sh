@@ -17,6 +17,9 @@ for file in ${testFiles}
 do
     node "${file}"
 
+    # @todo Consider adding more statuses to be able to differentiate
+    #   between not passed tests and an error
+
     if [[ "${?}" != 0 ]]
     then exit 1
     fi
