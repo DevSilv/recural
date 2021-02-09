@@ -24,6 +24,6 @@ If the pseudocode of an algorithm and any of the implementations of this algorit
 
 ## Authoritativeness of the pseudocode of an algorithm to its implementations (or vice versa)
 
-For an algorithm, its pseudocode **must not** be treated as authoritative to any implementation of the  algorithm, and vice versa: any implementation **must not** be treated as authoritative neither to any other one, nor to the pseudocode.
+For an algorithm, its pseudocode **must not** be treated as authoritative to any implementation of the algorithm, and vice versa: any implementation **must not** be treated as authoritative neither to any other one, nor to the pseudocode.
 
 The reason is, each implementation is expected to be different from every other implementations, and from the pseudocode. As an example: for an algorithm, it may happen that none of its implementations relates one to one to the pseudocode.
