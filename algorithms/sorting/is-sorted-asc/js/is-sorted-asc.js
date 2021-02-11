@@ -15,8 +15,7 @@
  */
 exports.isSortedAsc
     = (isGreaterFn, arr, cur) =>
-        arr.length < 2
-            || cur > arr.length
+        arr.length < 2 || cur === arr.length - 1
             ? true
             : isGreaterFn(arr[cur], arr[cur + 1])
                 ? false
