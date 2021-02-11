@@ -1,52 +1,17 @@
 const { test } = require("../../../../test-runners/js/test");
 const { isSortedAsc } = require("./is-sorted-asc");
 
+const isSortedAscWrapper = arr => isSortedAsc((a, b) => a > b, arr, 0);
+
 test(
-    res => {
-        console.log(`isSortedAsc: ${res}`);
-    },
+    res => console.log(`isSortedAsc: ${res}`),
     [
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [],
-                0
-            ) === true,
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [0],
-                0
-            ) === true,
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [0, 1, 2, 3],
-                0
-            ) === true,
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [0, 1, 1, 2, 3],
-                0
-            ) === true,
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [3, 2, 1, 0],
-                0
-            ) === false,
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [0, 3, 2, 1, 4],
-                0
-            ) === false,
-        () =>
-            isSortedAsc(
-                (firstElem, secondElem) => firstElem > secondElem,
-                [0, 1, 2, 3, 0],
-                0
-            ) === false
+        () => isSortedAscWrapper([]) === true,
+        () => isSortedAscWrapper([0]) === true,
+        () => isSortedAscWrapper([0, 1, 2, 3]) === true,
+        () => isSortedAscWrapper([0, 1, 1, 2, 3]) === true,
+        () => isSortedAscWrapper([3, 2, 1, 0]) === false,
+        () => isSortedAscWrapper([0, 3, 2, 1, 4]) === false,
+        () => isSortedAscWrapper([0, 1, 2, 3, 0]) === false
     ]
 );
