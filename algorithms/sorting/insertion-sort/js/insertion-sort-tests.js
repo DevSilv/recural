@@ -8,19 +8,19 @@ const { generateIntegerRange } = require("../../../../benchmarks/js/utils");
 const { isSortedAsc } = require("../../is-sorted-asc/js/is-sorted-asc");
 
 const isSorted = arr => isSortedAsc((a, b) => a > b, arr, 0);
-const insSort = arr => insertionSort(arr, 1, 1);
+const sort = arr => insertionSort(arr, 1, 1);
 const genInput
     = () => generateRandomPermutation(generateIntegerRange(1, 150), []);
 
 test(
     res => console.log(`insertionSort: ${res}`),
     [
-        () => isSorted(insSort([])) === true,
-        () => isSorted(insSort([0])) === true,
-        () => isSorted(insSort([0, 0, 0])) === true,
-        () => isSorted(insSort([0, 1, 2])) === true,
-        () => isSorted(insSort([2, 1, 0])) === true,
-        () => isSorted(insSort([2, 0, 1])) === true,
-        () => isSorted(insSort(genInput())) === true
+        () => isSorted(sort([])) === true,
+        () => isSorted(sort([0])) === true,
+        () => isSorted(sort([0, 0, 0])) === true,
+        () => isSorted(sort([0, 1, 2])) === true,
+        () => isSorted(sort([2, 1, 0])) === true,
+        () => isSorted(sort([2, 0, 1])) === true,
+        () => isSorted(sort(genInput())) === true
     ]
 );
