@@ -1,7 +1,4 @@
-const { getArrWithElemsSwapped }
-    = require(
-        "../../get-arr-with-elems-swapped/js/get-arr-with-elems-swapped.js"
-    );
+const { swapElems } = require("../../../../utils/swap-elems/js/swap-elems.js");
 
 /**
  * @param {number[]} arr
@@ -19,7 +16,7 @@ exports.selectionSort
                     ? exports.selectionSort(arr, cur, k + 1, k)
                     : exports.selectionSort(arr, cur, k + 1, minIdx)
                 : exports.selectionSort(
-                    getArrWithElemsSwapped(arr, cur, minIdx),
+                    swapElems(arr, cur, minIdx),
                     cur + 1,
                     cur + 2,
                     cur + 1

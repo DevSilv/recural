@@ -1,7 +1,4 @@
-const { getArrWithElemsSwapped }
-    = require(
-        "../../get-arr-with-elems-swapped/js/get-arr-with-elems-swapped.js"
-    );
+const { swapElems } = require("../../../../utils/swap-elems/js/swap-elems.js");
 
 /**
  * @param {number[]} arr
@@ -15,6 +12,6 @@ exports.insertionSort
             ? arr
             : y >= 1 && arr[y - 1] > arr[y]
                 ? exports.insertionSort(
-                    getArrWithElemsSwapped(arr, y - 1, y), cur, y - 1
+                    swapElems(arr, y - 1, y), cur, y - 1
                 )
                 : exports.insertionSort(arr, cur + 1, cur + 1);
