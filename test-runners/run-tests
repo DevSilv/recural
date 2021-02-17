@@ -3,9 +3,10 @@
 # Uncomment to debug
 # set -x
 
-jsTestRunnerPath="$(dirname ${0})/js/test.sh"
-bashTestRunnerPath="$(dirname ${0})/bash/run-bash-tests.sh"
-cTestRunnerPath="$(dirname ${0})/c/run-c-tests.sh"
+jsTestRunnerPath="$(dirname ${0})/js/run-js-tests"
+bashTestRunnerPath="$(dirname ${0})/bash/run-bash-tests"
+cTestRunnerPath="$(dirname ${0})/c/run-c-tests"
+phpTestRunnerPath="$(dirname ${0})/php/run-php-tests"
 
 echo "Testing JavaScript scripts..." \
     && "${jsTestRunnerPath}" \
@@ -25,3 +26,10 @@ echo "Testing C implementations..." \
     && "${cTestRunnerPath}" \
     && echo "All C tests PASSED" \
     || echo "EITHER some C tests failed OR an error happened"
+
+echo
+
+echo "Testing PHP scripts..." \
+    && "${phpTestRunnerPath}" \
+    && echo "All PHP tests PASSED" \
+    || echo "EITHER some PHP tests failed OR an error happened"
