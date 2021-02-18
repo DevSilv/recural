@@ -7,7 +7,7 @@ exports.generateIntegerRange
     = (start, end) =>
         Array
             .from(
-                new Array(end + 1)
+                new Array(end - start + 1)
                     .keys()
             )
-            .filter(elem => elem >= start);
+            .map(elem => elem + start);

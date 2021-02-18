@@ -1,4 +1,4 @@
-const { test } = require("../../../../test-runners/js/test");
+const { test } = require("../../../test-runners/js/test");
 const { generateIntegerRange } = require("./generate-integer-range.js");
 const { deepAreArraysEqual }
     = require(
@@ -10,6 +10,9 @@ test(
     [
         () => deepAreArraysEqual(generateIntegerRange(0, 0), [0]),
         () => deepAreArraysEqual(generateIntegerRange(0, 3), [0, 1, 2, 3]),
-        () => deepAreArraysEqual(generateIntegerRange(-3, 3), [-3, -2, -1, 0, 1, 2, 3])
+        () =>
+            deepAreArraysEqual(
+                generateIntegerRange(-3, 3), [-3, -2, -1, 0, 1, 2, 3]
+            )
     ]
 );

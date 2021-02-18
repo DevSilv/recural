@@ -1,8 +1,8 @@
-const { test } = require("../../../../test-runners/js/test");
+const { test } = require("../../../test-runners/js/test");
 const { swapElems } = require("./swap-elems.js");
 const { deepAreArraysEqual }
     = require(
-        "../../../other-problems/are-arrays-equal/js/are-arrays-equal.js"
+        "../../../algorithms/other-problems/are-arrays-equal/js/are-arrays-equal.js"
     );
 
 test(
