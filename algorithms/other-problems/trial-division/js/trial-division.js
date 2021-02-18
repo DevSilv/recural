@@ -1,4 +1,7 @@
-const benchmarkUtilsModule = require("../../../../benchmarks/js/utils");
+const { generateIntegerRange }
+    = require(
+        "../../../../utils/generate-integer-range/js/generate-integer-range.js"
+    );
 
 /**
  * @param {number} num

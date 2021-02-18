@@ -1,6 +1,9 @@
 const { test } = require("../../../../test-runners/js/test");
 const { generateRandomPermutation } = require("./generate-random-permutation");
-const { generateIntegerRange } = require("../../../../benchmarks/js/utils");
+const { generateIntegerRange }
+    = require(
+        "../../../../utils/generate-integer-range/js/generate-integer-range.js"
+    );
 const { findAll } = require("../../../searching/find-all/js/find-all");
 
 const mockArr = generateIntegerRange(0, 100);

@@ -1,14 +1,17 @@
 const { test } = require("../../../../test-runners/js/test");
 const areArraysEqualModule
     = require("../../are-arrays-equal/js/are-arrays-equal");
-const benchmarkUtilsModule = require("../../../../benchmarks/js/utils");
+const { generateIntegerRange }
+    = require(
+        "../../../../utils/generate-integer-range/js/generate-integer-range.js"
+    );
 const {
     reverse,
     reverse2
 } = require("./reverse");
 
 const mockArrs = [
-    benchmarkUtilsModule.generateIntegerRange(1, 200)
+    generateIntegerRange(1, 200)
 ];
 
 test(
