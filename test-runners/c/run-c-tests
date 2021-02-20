@@ -9,7 +9,8 @@
 
 scriptPath="${0}"
 scriptDirPath="$(dirname ${scriptPath})"
-testDirs="$(find ${scriptDirPath}/../../algorithms/ -type d -name 'c-tests')"
+testDirs="$(find ${scriptDirPath}/../../ -type d -name 'c-tests' \
+    | grep -v 'drafts/')"
 status=0
 testDirsCount="$( echo ${testDirs} | wc -w )"
 count=0

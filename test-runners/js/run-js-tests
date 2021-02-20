@@ -5,7 +5,8 @@
 
 scriptPath="${0}"
 scriptDirPath="$(dirname ${scriptPath})"
-testFiles="$(find ${scriptDirPath}/../../ -type f -name '*-tests.js')"
+testFiles="$(find ${scriptDirPath}/../../ -type f -name '*-tests.js' \
+    | grep -v 'drafts/')"
 testFilesCount="$( echo ${testFiles} | wc -w )"
 count=0
 percent=0

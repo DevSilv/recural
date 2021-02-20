@@ -1,5 +1,6 @@
 <?php
 
+require_once __dir__ . "/../../../test-runners/php/test.php";
 require_once __dir__ . "/swap-elems.php";
 
 test(

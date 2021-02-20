@@ -5,7 +5,7 @@
 
 scriptPath="${0}"
 scriptDirPath="$(dirname ${scriptPath})"
-testFiles="$(find ${scriptDirPath}/../../ -type f -name '*-tests.sh' \
+testFiles="$(find ${scriptDirPath}/../../ -type f -name '*Tests.clj' \
     | grep -v 'drafts/')"
 testFilesCount="$( echo ${testFiles} | wc -w )"
 count=0
@@ -16,7 +16,10 @@ printf "[ "
 
 for file in ${testFiles}
 do
-    bash "${file}"
+    clojure "$(dirname "${file}")"/*.clj
+
+    # @todo Consider adding more statuses to be able to differentiate
+    #   between not passed tests and an error
 
     if [[ "${?}" != 0 ]]
     then exit 1

@@ -7,29 +7,37 @@ jsTestRunnerPath="$(dirname ${0})/js/run-js-tests"
 bashTestRunnerPath="$(dirname ${0})/bash/run-bash-tests"
 cTestRunnerPath="$(dirname ${0})/c/run-c-tests"
 phpTestRunnerPath="$(dirname ${0})/php/run-php-tests"
+clojureTestRunnerPath="$(dirname ${0})/clojure/run-clojure-tests"
 
-echo "Testing JavaScript scripts..." \
+echo "Testing JavaScript code..." \
     && "${jsTestRunnerPath}" \
     && echo "All JavaScript tests PASSED" \
     || echo "Some JavaScript tests FAILED"
 
 echo
 
-echo "Testing Bash scripts..." \
+echo "Testing Bash code..." \
     && "${bashTestRunnerPath}" \
     && echo "All Bash tests PASSED" \
     || echo "Some Bash tests FAILED"
 
 echo
 
-echo "Testing C implementations..." \
+echo "Testing C code..." \
     && "${cTestRunnerPath}" \
     && echo "All C tests PASSED" \
     || echo "EITHER some C tests failed OR an error happened"
 
 echo
 
-echo "Testing PHP scripts..." \
+echo "Testing PHP code..." \
     && "${phpTestRunnerPath}" \
     && echo "All PHP tests PASSED" \
     || echo "EITHER some PHP tests failed OR an error happened"
+
+echo
+
+echo "Testing Clojure code..." \
+    && "${clojureTestRunnerPath}" \
+    && echo "All Clojure tests PASSED" \
+    || echo "EITHER some Clojure tests failed OR an error happened"
